@@ -1,0 +1,41 @@
+<footer class="footer">
+
+  <section class="footer-dop-inf">
+    <div class="wrapper-footer-logo">
+      <img src="../assets/icon/Logo.png" alt="Logo" class="footer-logo">
+    </div>
+
+    <section class="wrapper-footer-buyer colum-footer-content">
+      <h6 class="title-footer-content">Покупателю</h6>
+      <ul class="list-footer-buyer">
+        <li class="point-footer-list" *ngFor="let item of byerList">{{item}}</li>
+      </ul>
+    </section>
+
+    <section class="wrapper-footer-info colum-footer-content">
+      <h6 class="title-footer-content">Инфо</h6>
+      <ul class="list-footer-buyer">
+        <li class="point-footer-list"*ngFor="let item of info">{{item}}</li>
+      </ul>
+    </section>
+
+    <section class="wrapper-footer-contacts colum-footer-content">
+      <h6 class="title-footer-content">Контакты</h6>
+      <div class="footer-wrapper-for-icon">
+        <a href="##" class="link-footer-contacts">
+          <img src="../assets/icon/footer-contacts/ds.svg" alt="ds" class="icon-footer-contacts ds">
+        </a>
+        <a href="##" class="link-footer-contacts">
+          <img src="../assets/icon/footer-contacts/tg.svg" alt="tg" class="icon-footer-contacts tg">
+        </a>
+        <a href="##" class="link-footer-contacts">
+          <img src="../assets/icon/footer-contacts/vk.svg" alt="Vk" class="icon-footer-contacts vk">
+        </a>
+      </div>
+    </section>
+  </section>
+  <hr class="footer-hr-line">
+  <section class="protection-of-rights">
+    Все права защищены © 2022
+  </section>
+</footer>
