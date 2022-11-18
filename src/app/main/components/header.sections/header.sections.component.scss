@@ -1,0 +1,53 @@
+.main-wrapper-game-content-title{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.section-title{
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+.main-wrapper-game-navigation{
+  width: 110px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-circle{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+}
+.navigation-circle:hover{
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+}
+.back{
+  width: 25px;
+  height: 25px;
+  transform: rotate(180deg);
+}
+.forward{
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 810px) {
+  .main-wrapper-game-content-title{
+    padding-top: 60px;
+  }
+  .section-title{
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .navigation-circle{
+    width: 30px;
+    height: 30px;
+  }
+}

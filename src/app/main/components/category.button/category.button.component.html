@@ -1,0 +1,13 @@
+<div class="main-wrapper-game-content-genre">
+  <div class="main-wrapper-game-content-genre-button">
+    <button
+    class="btn-genre"
+    *ngFor="let item of category; let i = index"
+    id = {{i+1}}
+    #btn
+    [ngClass]="{'btn-genre-active': btn.id == active}"
+    (click)="active = btn.id"
+    >{{item}}</button>
+
+  </div>
+</div>

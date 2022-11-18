@@ -1,0 +1,155 @@
+.main-baner {
+  width: 100vw;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.wrapper-background-main {
+  display: flex;
+  position: relative;
+  transition: all 0.5s;
+}
+.navigate-baner-bar {
+  height: 36px;
+  width: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.point {
+  cursor: pointer;
+}
+.point:hover {
+  cursor: pointer;
+  .point2 {
+    fill: #ef1e61;
+  }
+}
+
+.main-wrapper-game-content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: 790px;
+  overflow-y: auto;
+  margin-bottom: 100px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.main-section-confidence {
+  height: 746px;
+  background-color: #19143e;
+}
+
+.main-section-reviews {
+  width: 100%;
+  background-color: #19143e;
+  padding-bottom: 100px;
+}
+.main-wrapper-reviews-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrappper-for-reviews {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  min-height: 333px;
+  max-height: 696px;
+  overflow: auto;
+}
+
+.main-section-secondBaner {
+  background-color: #140f36;
+  padding-top: 100px;
+}
+.main-section-blog {
+  padding-bottom: 100px;
+}
+.section-blog-wrapper-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding: 20px 0;
+}
+
+.wappper-for-button-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-blog-see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 173px;
+  height: 54px;
+  background: #e4014a;
+  box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.45);
+  border-radius: 48px;
+  border: none;
+
+  font-weight: 500;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  cursor: pointer;
+}
+.button-blog-see-all:hover {
+  background: #ef1e61;
+  box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
+}
+@media screen and (max-width: 1177px) {
+  #cadNews3{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .wrappper-for-reviews {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .wrapper-background-main {
+    height: 553px;
+  }
+  .main-wrapper-game-content-cards {
+    margin-bottom: 60px;
+    gap: 20px;
+  }
+  .wrappper-for-reviews {
+    min-height: auto;
+    max-height: auto;
+    height: 479px;
+  }
+  .main-section-secondBaner {
+    padding-top: 60px;
+  }
+  .main-section-blog {
+    padding-bottom: 60px;
+  }
+  .button-blog-see-all{
+    width: 140px;
+    height: 42px;
+}
+}
+@media screen and (max-width: 550px) {
+  .wrapper-background-main {
+    height: 620px;
+    background-size: cover;
+  }
+  .navigate-baner-bar {
+    bottom: 25px;
+  }
+}

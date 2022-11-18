@@ -144,3 +144,8 @@
       height: 428px;
   }
 }
+@media screen and (max-width: 365px) {
+  .footer{
+    height: auto;
+}
+}

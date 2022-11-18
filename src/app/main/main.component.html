@@ -1,0 +1,160 @@
+<main>
+  <section class="main-baner">
+    <div
+      class="wrapper-background-main"
+      [ngStyle]="{
+        width: width,
+        left: left
+      }"
+    >
+      <main-baner *ngFor="let item of previewGame" [oneItem]="item">
+      </main-baner>
+    </div>
+    <div class="navigate-baner-bar">
+      <svg
+        *ngFor="let item of previewGame; let i = index"
+        class="point"
+        id="{{ i + 1 }}"
+        width="10"
+        height="10"
+        viewBox="0 0 7 7"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        #point
+        (click)="getId(point.id)"
+      >
+        <rect
+          class="point2"
+          opacity="1"
+          width="7"
+          height="7"
+          rx="3.5"
+          fill="white"
+        />
+      </svg>
+    </div>
+  </section>
+
+  <section class="main-section-game wrapper">
+    <div class="main-wrapper-game-content">
+      <header-section title="Игры" navigation=""></header-section>
+      <category-button></category-button>
+
+      <div class="main-wrapper-game-content-cards">
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section-confidence">
+    <div class="wrapper">
+      <div class="main-section-confidence-content">
+        <header-section
+          title="Почему нам доверяют?"
+          navigation=""
+        ></header-section>
+        <confidence-card></confidence-card>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section-big-discont wrapper">
+    <div class="main-wrapper-game-content">
+      <header-section
+        title="Самые большие скидки"
+        navigation=""
+      ></header-section>
+
+      <div class="main-wrapper-game-content-cards">
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+        <game-card
+          *ngFor="let item of allGame; let i = index"
+          [oneGame]="item"
+          #cardGame
+          id="cardGame{{ i + 1 }}"
+        ></game-card>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section-reviews">
+    <div class="wrapper">
+      <div class="main-wrapper-reviews-content">
+        <header-section
+          title="Отзывы о нашем магазине"
+          navigation=""
+        ></header-section>
+
+        <div class="wrappper-for-reviews">
+          <review-card
+            *ngFor="let item of allReview"
+            [oneReview]="item"
+          ></review-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section-secondBaner">
+    <div class="wrapper">
+      <second-baner [baner]="secondBaner"></second-baner>
+    </div>
+  </section>
+
+  <section class="main-section-blog">
+    <div class="wrapper">
+      <header-section title="Последнее из блога" navigation=""></header-section>
+
+      <div class="section-blog-wrapper-cards">
+        <news-card *ngFor="let item of viewNews; let i = index "
+        [oneNews]="item"
+        id="cadNews{{ i + 1 }}"
+        ></news-card>
+      </div>
+
+      <div class="wappper-for-button-blog">
+        <button class="button-blog-see-all">Смотреть все</button>
+      </div>
+    </div>
+  </section>
+</main>
