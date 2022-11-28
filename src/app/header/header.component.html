@@ -1,7 +1,7 @@
 <header class="header">
   <div class="wrapper">
     <div class="wrapper-header">
-      <section class="wrapper-title">
+      <section class="wrapper-title" routerLink="/" >
         <img src="../assets/icon/Logo.png" alt="Logo" class="header-llogo-title">
       </section>
       <section class="wrapper-btn-catalog">
@@ -36,7 +36,7 @@
     <div class="wrapper-nav">
       <nav class="nav">
         <ul class="ul-list">
-          <li class="li-item" *ngFor="let item of itemNav">{{item}}</li>
+          <li class="li-item" *ngFor="let item of itemNav" #item (click) = "routerToPage(item)">{{item}}</li>
         </ul>
       </nav>
     </div>

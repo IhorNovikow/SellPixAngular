@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,9 +16,18 @@ export class HeaderComponent implements OnInit {
     'Сотрудничество',
     ]
 
-  constructor() { }
+    constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  routerToPage(name: string){
+    const message: string = 'sorry, i havent this page. it page in stage development'
+    this.router.navigate([`/aboutShop`]);
+    if( name === 'О нашем магазине'){
+      this.router.navigate([`/aboutShop`]);
+    } else{
+      alert(message)
+    }
+  }
 }

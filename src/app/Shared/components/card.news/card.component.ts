@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { News } from '../../../../data/some.serv.data';
+import { News } from '../../../data/some.serv.data';
 
 @Component({
   selector: 'news-card',

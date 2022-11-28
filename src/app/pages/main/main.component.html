@@ -92,6 +92,7 @@
       <div class="main-wrapper-game-content-cards">
         <game-card
           *ngFor="let item of http.result; let i = index"
+          (click) = "routeOneGame(item._id)"
           [oneGame]="item"
           #cardGame
           id="{{item._id}}"

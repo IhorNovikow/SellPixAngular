@@ -14,4 +14,3 @@ export class ReviewComponent implements OnInit {
     console.log({'this.someGame.reviews': this.someGame.reviews});
   }
 }
-//review.component
