@@ -1,0 +1,46 @@
+<main class="main">
+  <div
+    class="wrapper-backgroung"
+    [ngStyle]="{ backgroundImage: backgroundImage }"
+  ></div>
+
+  <div class="wrapper">
+    <div class="main-content">
+      <section class="main-wrapper-first-colum">
+        <section class="wrapper-cover-game">
+          <img
+            src="{{ someGame.img.average }}"
+            alt="coverGame"
+            class="coverGame"
+          />
+        </section>
+        <description-game [someGame]="someGame"></description-game>
+      </section>
+
+      <section class="main-wrapper-second-colum">
+        <title-page
+          title="{{ someGame.title }}"
+          afterWay="Игры"
+          style="width: 100%"
+        ></title-page>
+
+        <buy-game [someGame]="someGame" style="width: 100%"></buy-game>
+
+        <specification-game
+          [someGame]="someGame"
+          [view]="someGame.discription.discription"
+          style="width: 100%"
+        ></specification-game>
+
+        <description-game
+          [someGame]="someGame"
+          class="wrapper-description-game1220"
+        ></description-game>
+
+        <carusel-game [someGame]="someGame"></carusel-game>
+
+        <review-game [someGame]="someGame"></review-game>
+      </section>
+    </div>
+  </div>
+</main>

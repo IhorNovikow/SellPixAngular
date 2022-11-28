@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../data/some.serv.data';
-
+import { Game } from '../../../../data/some.serv.data';
 
 @Component({
   selector: 'main-baner',

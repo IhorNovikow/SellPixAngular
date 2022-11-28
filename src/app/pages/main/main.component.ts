@@ -1,33 +1,35 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { HttpServis } from '../../core/servis/http.servis';
 import {
-  ansverServ,
   Game,
   Review,
   someNews,
   News,
-} from '../data/some.serv.data';
+} from '../../data/some.serv.data';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
+
 export class MainComponent implements OnInit {
-  allGame: Game[] = ansverServ;
   allReview: Review[] = [];
-  previewGame: Game[] = ansverServ.filter((el) => {
-    return el.category.preview;
-  });
   secondBaner: Game;
   viewNews: News[] = someNews.slice(0, 3);
   width: string;
   left: string = '0';
-  constructor() {}
+
+  constructor(
+    public http: HttpServis,
+    private router: Router,
+    ) {}
 
   ngOnInit(): void {
-    console.log(this.viewNews);
-    this.width = String(this.previewGame.length * 100) + '%';
-    ansverServ.forEach((el) => {
+    this.http.getData()
+    this.width = String(this.http.previewGame.length * 100) + '%';
+    this.http.result.forEach((el) => {
       this.allReview = this.allReview.concat(el.reviews);
       if (el.category.secondBaner) {
         this.secondBaner = el;
@@ -36,5 +38,9 @@ export class MainComponent implements OnInit {
   }
   getId(id: string) {
     this.left = String(-Number(id) * 100 + 100) + '%';
+  }
+
+  routeOneGame(id: string){
+    this.router.navigate([`/game/${id}`]);
   }
 }

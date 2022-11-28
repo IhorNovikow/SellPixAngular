@@ -11,6 +11,7 @@ import { ConfidenceCardComponent } from './components/confidence.card/confidence
 import { ReviewCardComponent } from './components/card.review/card.component';
 import { SecondBanerComponent } from './components/second.baner/second.baner.component';
 import { CardNewsComponent } from './components/card.news/card.component';
+import { OneGameComponent } from '../oneGame/oneGame.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CardNewsComponent } from './components/card.news/card.component';
     ReactiveFormsModule,
     RouterModule.forChild([
       { path:'', component: MainComponent },
+      { path: 'game/:id', loadChildren: () => import('../oneGame/oneGame.module').then(mod => mod.OneGameModule) },
       //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
       /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ])],

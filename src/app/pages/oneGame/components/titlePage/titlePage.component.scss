@@ -1,0 +1,79 @@
+.title-game{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.wrapper-title-game{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.router-link{
+  //color: #716BA8;
+  opacity: 0.5;
+  &:hover{
+    opacity: 1;
+  }
+}
+.title-game-h{
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+.saveToFavorits{
+  margin-top: 8px;
+}
+@media screen and (max-width: 1220px) {
+  .title-game {
+      width: 100%;
+      max-width: 857px;
+      margin: 0 auto;
+  }
+}
+@media screen and (max-width: 745px) {
+  .title-game {
+      padding-bottom: 0px;
+  }
+}
+
+
+/*
+.title-game{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.wrapper-title-game{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-wrapper-way{
+  color: #716BA8;
+}
+.title-game-h{
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+.saveToFavorits{
+  margin-top: 8px;
+}
+@media screen and (max-width: 1220px) {
+  .title-game {
+      width: 100%;
+      max-width: 857px;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .title-game {
+      padding-bottom: 0px;
+  }
+}
+*/

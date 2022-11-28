@@ -36,12 +36,13 @@ export interface Game {
     systemRequirements: string;
     activation: string;
   };
-
+  _id: string;
   photo: string[];
   reviews: Review[];
 }
 export const ansverServ: Game[] = [
   {
+    _id: 'q',
     img: {
       big: '../../assets/photo/main-game/Battlefield_2042/baner/fon.png',
       average:
@@ -54,13 +55,13 @@ export const ansverServ: Game[] = [
       new: true,
       hit: true,
       popular: true,
-      preview: true,
+      preview: false,
       secondBaner: true,
     },
     price: {
-      priceOld: 1990,
-      priceNow: 2990,
-      discount: 90,
+      priceOld: 1,
+      priceNow: 1,
+      discount: 1,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -142,6 +143,7 @@ export const ansverServ: Game[] = [
     ],
   },
   {
+    _id: 'w',
     img: {
       big: '../../assets/photo/main-game/Stray/baner/F4tauV8VGO6x.jpg',
       average: '../../assets/photo/main-game/Stray/average/Stray.png',
@@ -152,13 +154,13 @@ export const ansverServ: Game[] = [
       new: true,
       hit: true,
       popular: true,
-      preview: true,
+      preview: false,
       secondBaner: false,
     },
     price: {
-      priceOld: 2000,
-      priceNow: 5000,
-      discount: 20,
+      priceOld: 1,
+      priceNow: 1,
+      discount: 1,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -242,6 +244,7 @@ export const ansverServ: Game[] = [
     ],
   },
   {
+    _id: 'e',
     img: {
       big: '../../assets/photo/main-game/Cities_Skylines/baner/cities_skylines.jpg',
       average:
@@ -254,7 +257,7 @@ export const ansverServ: Game[] = [
       new: true,
       hit: true,
       popular: true,
-      preview: true,
+      preview: false,
       secondBaner: false,
     },
     price: {
@@ -344,6 +347,7 @@ export const ansverServ: Game[] = [
     ],
   },
   {
+    _id: 'r',
     img: {
       big: '../../assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
       average: '../../assets/photo/main-game/Dead_Cells/average/deadCell.png',

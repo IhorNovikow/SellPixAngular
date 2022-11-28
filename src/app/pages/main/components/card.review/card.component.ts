@@ -1,16 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../data/some.serv.data';
+import { Review } from '../../../../data/some.serv.data';
 
 @Component({
-  selector: 'game-card',
+  selector: 'review-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
 
-export class GameCardComponent implements OnInit {
-  @Input()oneGame: Game;
+export class ReviewCardComponent implements OnInit {
+  @Input() oneReview: Review;
   constructor() { }
 
   ngOnInit(): void {
+
   }
 }

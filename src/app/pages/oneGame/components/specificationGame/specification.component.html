@@ -1,0 +1,15 @@
+<section class="description-game">
+  <div class="wrapper-title-description-section">
+    <div class="wrapper-for-scroll">
+      <p class="title-descrioption title-description-active" #spec id="spec" (click)="viewSpec(spec.id)">Описание</p>
+      <p class="title-descrioption" #sist id="sist" (click)="viewSpec(sist.id)">Системные требования</p>
+      <p class="title-descrioption" #activ id="activ" (click)="viewSpec(activ.id)">Активация</p>
+    </div>
+
+  </div>
+
+  <hr class="hr-line-in-box">
+  <section class="content-description-game">
+    <p>{{view}}</p>
+  </section>
+</section>

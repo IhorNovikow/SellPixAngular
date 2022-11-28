@@ -7,12 +7,12 @@
         left: left
       }"
     >
-      <main-baner *ngFor="let item of previewGame" [oneItem]="item">
+      <main-baner *ngFor="let item of http.previewGame" [oneItem]="item">
       </main-baner>
     </div>
     <div class="navigate-baner-bar">
       <svg
-        *ngFor="let item of previewGame; let i = index"
+        *ngFor="let item of http.previewGame; let i = index"
         class="point"
         id="{{ i + 1 }}"
         width="10"
@@ -42,28 +42,29 @@
 
       <div class="main-wrapper-game-content-cards">
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
+          (click) = "routeOneGame(item._id)"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
       </div>
     </div>
@@ -90,28 +91,28 @@
 
       <div class="main-wrapper-game-content-cards">
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
         <game-card
-          *ngFor="let item of allGame; let i = index"
+          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
-          id="cardGame{{ i + 1 }}"
+          id="{{item._id}}"
         ></game-card>
       </div>
     </div>
