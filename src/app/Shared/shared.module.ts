@@ -5,6 +5,7 @@ import { CardNewsComponent } from './components/card.news/card.component';
 import { CommonModule } from '@angular/common';
 import { HeaderSectionComponent } from './components/header.sections/header.sections.component';
 import { ConfidenceCardComponent } from './components/confidence.card/confidence.card';
+import { TitlePageComponent } from './components/titlePage/titlePage.component';
 
 @NgModule({
   declarations: [
@@ -13,13 +14,19 @@ import { ConfidenceCardComponent } from './components/confidence.card/confidence
     ReviewCardComponent,
     CardNewsComponent,
     ConfidenceCardComponent,
+    TitlePageComponent,
 
   ],
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule],
   providers: [],
   bootstrap: [],
-  exports: [GameCardComponent, ReviewCardComponent, CardNewsComponent, HeaderSectionComponent, ConfidenceCardComponent],
+  exports: [
+    GameCardComponent,
+    ReviewCardComponent,
+    CardNewsComponent,
+    HeaderSectionComponent,
+    ConfidenceCardComponent,
+    TitlePageComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

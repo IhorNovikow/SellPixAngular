@@ -17,7 +17,6 @@ export class HttpServis {
   getData() {
     this.http.get<Game[]>('https://serv-sell-pix.vercel.app/get/games')
       .subscribe((response) => {
-        console.log('response', response);
         this.result = response;
         this.previewGame = response.filter((el) => {
           return el.category.preview;

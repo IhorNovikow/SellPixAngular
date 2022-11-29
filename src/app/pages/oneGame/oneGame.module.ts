@@ -3,17 +3,16 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { OneGameComponent } from './oneGame.component';
-import { TitlePageComponent } from './components/titlePage/titlePage.component';
 import { DiscriptionGameComponent } from './components/descriptionGame/descriptionGame.component';
 import { BuyGameComponent } from './components/buyGame/buyGame.component';
 import { SpecificationGameComponent } from './components/specificationGame/specification.component';
 import { CaruselComponent } from './components/carusel/carusel.component';
 import { ReviewComponent } from './components/review/review.component';
+import { SharedModule } from '../../Shared/shared.module';
 
 @NgModule({
   declarations: [
     OneGameComponent,
-    TitlePageComponent,
     DiscriptionGameComponent,
     BuyGameComponent,
     SpecificationGameComponent,
@@ -21,6 +20,7 @@ import { ReviewComponent } from './components/review/review.component';
     ReviewComponent
   ],
   imports: [
+    SharedModule,
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild([
