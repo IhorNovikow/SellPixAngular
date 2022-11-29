@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
   itemNav: string[] = [
@@ -14,20 +14,22 @@ export class HeaderComponent implements OnInit {
     'Вопрос-ответ',
     'Интересные статьи',
     'Сотрудничество',
-    ]
+  ];
 
-    constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  routerToPage(name: string){
-    const message: string = 'sorry, i havent this page. it page in stage development'
+  routerToPage(name: string) {
+    const message: string =
+      'sorry, i havent this page. it page in stage development';
     this.router.navigate([`/aboutShop`]);
-    if( name === 'О нашем магазине'){
+    if (name === 'О нашем магазине') {
       this.router.navigate([`/aboutShop`]);
-    } else{
-      alert(message)
+    } else if (name === 'Сотрудничество') {
+      this.router.navigate([`/cooperation`]);
+    } else {
+      alert(message);
     }
   }
 }
