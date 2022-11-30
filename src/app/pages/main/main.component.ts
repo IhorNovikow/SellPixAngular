@@ -43,4 +43,7 @@ export class MainComponent implements OnInit {
   routeOneGame(id: string){
     this.router.navigate([`/game/${id}`]);
   }
+  openNews(id: string){
+    this.router.navigate([`/news/${id}`]);
+  }
 }

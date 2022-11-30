@@ -449,6 +449,7 @@ export const ansverServ: Game[] = [
   },
 ];
 export interface News {
+  preview: boolean;
   _id: string;
   img: {
     big: string;
@@ -468,6 +469,7 @@ export interface News {
 }
 export const someNews: News[] = [
   {
+    preview: true,
     _id: '1qwerty',
     img: {
       big: '../../assets/photo/news/news1/backgroundBaner.png',
@@ -512,8 +514,10 @@ export const someNews: News[] = [
       реализации идей, от части которых приходилось бы
       отказываться в угоду удобству.`,
     },
+
   },
   {
+    preview: false,
     _id: '2qwerty',
     img: {
       big: '../../assets/photo/news/news1/backgroundBaner.png',
@@ -560,6 +564,7 @@ export const someNews: News[] = [
     },
   },
   {
+    preview: false,
     _id: '3qwerty',
     img: {
       big: '../../assets/photo/news/news1/backgroundBaner.png',

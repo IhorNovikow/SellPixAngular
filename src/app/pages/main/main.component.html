@@ -149,12 +149,14 @@
       <div class="section-blog-wrapper-cards">
         <news-card *ngFor="let item of viewNews; let i = index "
         [oneNews]="item"
-        id="cadNews{{ i + 1 }}"
+        #news
+        id="{{item._id}}"
+        (click) = "openNews(item._id)"
         ></news-card>
       </div>
 
       <div class="wappper-for-button-blog">
-        <button class="button-blog-see-all">Смотреть все</button>
+        <button class="button-blog-see-all" routerLink="/news">Смотреть все</button>
       </div>
     </div>
   </section>

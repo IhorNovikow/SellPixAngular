@@ -1,0 +1,20 @@
+<section class="baner-news"
+[ngStyle]="{ backgroundImage: backgroundImage }"
+>
+  <div class="wrapper-baner-content">
+    <div class="wrapper-content-information">
+      <img src="../assets/icon/mainSectionBlog/Icon_calendar.svg" alt="Icon_calendar" class="content-information-calendar">
+      <time class="content-information-time">{{newsShow.statistics.date | date: 'd MMMM y'}}</time>
+      <img src="../assets/icon/mainSectionBlog/Icon_view.svg" alt="Icon_view" class="content-information-view">
+      <div class="content-information-counter-view">
+        {{newsShow.statistics.view }}
+      </div>
+    </div>
+    <div class="wrapper-content-title">
+      <h3 class="wrapper-content-title-h">{{newsShow.title}}</h3>
+    </div>
+    <button class="btn-read" (click)="openNews(newsShow._id)">
+      Читать
+    </button>
+  </div>
+</section>
