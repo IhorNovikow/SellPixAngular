@@ -20,16 +20,9 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  routerToPage(name: string) {
+  routerToPage() {
     const message: string =
       'sorry, i havent this page. it page in stage development';
-    this.router.navigate([`/aboutShop`]);
-    if (name === 'О нашем магазине') {
-      this.router.navigate([`/aboutShop`]);
-    } else if (name === 'Сотрудничество') {
-      this.router.navigate([`/cooperation`]);
-    } else {
-      alert(message);
-    }
+    alert(message);
   }
 }

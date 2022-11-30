@@ -4,7 +4,7 @@
 .wrapper-baner-about-us {
   background: #19143e;
   height: 493px;
-  border-top: 1px solid rgb(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(253, 4, 4, 0.08);
   display: flex;
   justify-content: center;
   width: 100%;
@@ -22,8 +22,15 @@
   margin-top: 135px;
 }
 .main-wrapper-way {
-  color: #716ba8;
+  //color: #716ba8;
   margin-bottom: 9px;
+}
+.router-link{
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover{
+    opacity: 1;
+  }
 }
 .title-game-h {
   margin-bottom: 15px;

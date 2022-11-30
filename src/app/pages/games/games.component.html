@@ -1,0 +1,89 @@
+<main class="main">
+  <div class="wrapper">
+    <section class="main-wrapper-way">
+        <a routerLink="/" class="router-link">Главная</a> /
+        <span> Игры</span>
+    </section>
+
+    <section class="title-game-h">
+      <h3 class="title-game-h2">
+        Популярные игры
+      </h3>
+    </section>
+
+    <section class="main-wrapper-button-sort">
+      <div class="wrapper-button-sort-first">
+        <button class="btn-sort price">
+          <p class="title-btn-sort">Жанры</p>
+          <img src="../assets/icon/Icon_right.svg" alt="Icon_down" class="Icon_down-btn-sort">
+        </button>
+
+        <button class="btn-sort genres">
+          <p class="title-btn-sort">Цена</p>
+          <img src="../assets/icon/Icon_right.svg" alt="Icon_down" class="Icon_down-btn-sort">
+        </button>
+        <button class="btn-sort activation">
+          <p class="title-btn-sort">Активация</p>
+          <img src="../assets/icon/Icon_right.svg" alt="Icon_down" class="Icon_down-btn-sort">
+        </button>
+        <button class="btn-sort developer">
+          <p class="title-btn-sort">Разработчик</p>
+          <img src="../assets/icon/Icon_right.svg" alt="Icon_down" class="Icon_down-btn-sort">
+        </button>
+      </div>
+
+      <div class="wrapper-button-sort-second">
+        <p class="title-btn-sort title-btn-sort-second">Сортировка</p>
+        <img src="../assets/icon/Icon_right.svg" alt="Icon_down" class="Icon_down-btn-sort">
+      </div>
+    </section>
+
+    <section class="main-wrapper-game-cards">
+      <game-card
+        *ngFor="let item of someData; let i = index"
+        [oneGame]="item"
+        #cardGame
+        id="{{item._id}}"
+        (click) = "routeOneGame(item._id)"
+      ></game-card>
+      <!--
+      <game-card
+        *ngFor="let item of someData; let i = index"
+        [oneGame]="item"
+        #cardGame
+        id="{{item._id}}"
+        (click) = "routeOneGame(item._id)"
+      ></game-card>
+      <game-card
+        *ngFor="let item of someData; let i = index"
+        [oneGame]="item"
+        #cardGame
+        id="{{item._id}}"
+        (click) = "routeOneGame(item._id)"
+      ></game-card>
+      <game-card
+        *ngFor="let item of someData; let i = index"
+        [oneGame]="item"
+        #cardGame
+        id="{{item._id}}"
+        (click) = "routeOneGame(item._id)"
+      ></game-card>
+      <game-card
+        *ngFor="let item of someData; let i = index"
+        [oneGame]="item"
+        #cardGame
+        id="{{item._id}}"
+        (click) = "routeOneGame(item._id)"
+      ></game-card>
+    -->
+    </section>
+    <!--
+
+        <section class="main-wrapper-button-see-more">
+          <button class="btn-see-more">Показать еще</button>
+        </section>
+
+    -->
+
+  </div>
+</main>

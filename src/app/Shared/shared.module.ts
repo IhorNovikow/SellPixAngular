@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderSectionComponent } from './components/header.sections/header.sections.component';
 import { ConfidenceCardComponent } from './components/confidence.card/confidence.card';
 import { TitlePageComponent } from './components/titlePage/titlePage.component';
+import { CategoryButtonComponent } from './components/categoryButton/category.button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { TitlePageComponent } from './components/titlePage/titlePage.component';
     CardNewsComponent,
     ConfidenceCardComponent,
     TitlePageComponent,
-
+    CategoryButtonComponent
   ],
   imports: [CommonModule],
   providers: [],
@@ -27,6 +28,7 @@ import { TitlePageComponent } from './components/titlePage/titlePage.component';
     HeaderSectionComponent,
     ConfidenceCardComponent,
     TitlePageComponent,
+    CategoryButtonComponent,
   ],
 })
 export class SharedModule {}

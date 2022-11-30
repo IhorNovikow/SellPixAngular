@@ -18,11 +18,32 @@
       </section>
 
       <section class="main-wrapper-second-colum">
+        <!--
         <title-page
           title="{{ someGame.title }}"
           afterWay="Игры"
           style="width: 100%"
         ></title-page>
+      -->
+        <section class="title-game">
+          <div class="wrapper-title-game">
+            <section class="main-wrapper-way">
+              <p><a class="router-link" routerLink="/">Главная</a>
+                 /
+                <a routerLink="/games" class="router-link">Игры</a>
+                /
+                <span>{{someGame.title}}</span>
+              </p>
+            </section>
+            <div class="">
+              <h2 class="title-game-h">Игры</h2>
+            </div>
+          </div>
+          
+          <div class="wrapper-save-to-favorits">
+            <img src="../assets/icon//onegame/Icon_save.svg" alt="saveToFavorits" class="saveToFavorits">
+          </div>
+        </section>
 
         <buy-game [someGame]="someGame" style="width: 100%"></buy-game>
 

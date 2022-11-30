@@ -5,7 +5,7 @@
         <img src="../assets/icon/Logo.png" alt="Logo" class="header-llogo-title">
       </section>
       <section class="wrapper-btn-catalog">
-        <button class="btn-catalog">
+        <button class="btn-catalog" routerLink="/games">
           <span class="name-btn-catalog">Каталог</span>
           <img src="../assets/icon/Icon_apps.svg" alt="Icon_apps" class="img-catalog">
         </button>
@@ -32,11 +32,17 @@
       </section>
 
     </div>
+
     <hr class="hr-line">
     <div class="wrapper-nav">
       <nav class="nav">
         <ul class="ul-list">
-          <li class="li-item" *ngFor="let item of itemNav" #item (click) = "routerToPage(item)">{{item}}</li>
+          <li class="li-item" routerLink="/aboutShop" routerLinkActive="active-link">О нашем магазине</li>
+          <li class="li-item" (click)="routerToPage()" routerLinkActive="active-link">Гарантии магазина</li>
+          <li class="li-item" routerLink="/reviews" routerLinkActive="active-link">Отзывы о магазине</li>
+          <li class="li-item" routerLink="/qestion" routerLinkActive="active-link">Вопрос-ответ</li>
+          <li class="li-item" (click)="routerToPage()" routerLinkActive="active-link">Интересные статьи</li>
+          <li class="li-item" routerLink="/cooperation" routerLinkActive="active-link">Сотрудничество</li>
         </ul>
       </nav>
     </div>
