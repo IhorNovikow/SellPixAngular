@@ -55,38 +55,7 @@
   color: #e4014a;
 }
 
-.section-statistick-reviews {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 50px;
-  gap: 57px;
 
-  width: 1218px;
-  height: 160px;
-
-  background: #19143e;
-  border-radius: 30px;
-}
-.wrapper-statistick-block {
-  width: 210px;
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-.number-review {
-  font-family: "Bebas Neue";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  color: #e4014a;
-}
-.description-review {
-  text-align: center;
-}
 .main-section-confidence {
   background: none;
   margin-bottom: 200px;
@@ -95,10 +64,6 @@
   background: #19143e;
 }
 @media screen and (max-width: 1220px) {
-  .section-statistick-reviews {
-    width: 100%;
-    overflow: auto;
-  }
   .wrapper-content-baner-about-us {
     justify-content: space-between;
   }
@@ -147,16 +112,7 @@
     font-size: 28px;
     line-height: 28px;
   }
-  .section-statistick-reviews,
-  .wrapper-statistick-block {
-    height: 124px;
-  }
-  .number-review {
-    font-size: 28px;
-    line-height: 28px;
-  }
-  .description-review {
-    font-size: 14px;
-    line-height: 21px;
-  }
+
+
+
 }

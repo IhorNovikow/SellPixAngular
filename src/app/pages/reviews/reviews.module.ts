@@ -6,6 +6,7 @@ import { ReviewsComponent } from './reviews.component';
 
 @NgModule({
   declarations: [
+    ReviewsComponent
   ],
   imports: [
     SharedModule,

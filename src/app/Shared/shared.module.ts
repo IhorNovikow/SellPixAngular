@@ -7,6 +7,7 @@ import { HeaderSectionComponent } from './components/header.sections/header.sect
 import { ConfidenceCardComponent } from './components/confidence.card/confidence.card';
 import { TitlePageComponent } from './components/titlePage/titlePage.component';
 import { CategoryButtonComponent } from './components/categoryButton/category.button.component';
+import { LineReviewComponent } from './components/lineReview/lineReview.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CategoryButtonComponent } from './components/categoryButton/category.bu
     CardNewsComponent,
     ConfidenceCardComponent,
     TitlePageComponent,
-    CategoryButtonComponent
+    CategoryButtonComponent,
+    LineReviewComponent
   ],
   imports: [CommonModule],
   providers: [],
@@ -29,6 +31,7 @@ import { CategoryButtonComponent } from './components/categoryButton/category.bu
     ConfidenceCardComponent,
     TitlePageComponent,
     CategoryButtonComponent,
+    LineReviewComponent,
   ],
 })
 export class SharedModule {}
