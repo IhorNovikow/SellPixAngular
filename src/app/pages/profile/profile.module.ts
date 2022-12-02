@@ -8,6 +8,7 @@ import { SettingsProfileComponent } from './components/settingsProfile/settingsP
 import { SettingsMailComponent } from './components/settingsMail/settingsMail.component';
 import { SeilsComponent } from './components/seils/seils.component';
 import { DescriptionComponent } from './components/description/description.component';
+import { DiscontComponent } from './components/description/components/discont/discont.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DescriptionComponent } from './components/description/description.compo
     SettingsProfileComponent,
     SettingsMailComponent,
     SeilsComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    DiscontComponent,
   ],
   imports: [
     SharedModule,
