@@ -9,6 +9,7 @@
   background-position: center;
   background-size: cover;
 }
+
 .wrapper-main-content {
   position: absolute;
   width: 80%;
@@ -17,6 +18,7 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .main-baner-content {
   display: flex;
   flex-direction: column;
@@ -26,6 +28,7 @@
   position: relative;
   bottom: 59px;
 }
+
 .main-content-wrapper-discount {
   display: flex;
   justify-content: center;
@@ -37,29 +40,30 @@
 
   font-weight: 500;
   color: #e4014a;
+
+  &:hover {
+    background: rgba(228, 1, 74, 0.35);
+  }
 }
-.main-content-wrapper-discount:hover {
-  background: rgba(228, 1, 74, 0.35);
-}
+
 .main-content-title {
   font-family: "Bebas Neue";
-  font-style: normal;
   font-weight: 700;
   font-size: 65px;
   line-height: 100%;
-  color: #ffffff;
-  position: relative;
-  top: 3px;
 }
+
 .main-content-subtitle {
   position: relative;
   top: -5px;
 }
+
 .main-content-wrapper-for-button {
   display: flex;
   justify-content: space-between;
   width: 304px;
 }
+
 .main-content-button {
   display: flex;
   justify-content: center;
@@ -73,11 +77,13 @@
 
   color: #ffffff;
   cursor: pointer;
+
+  &:hover {
+    background: #ef1e61;
+    box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
+  }
 }
-.main-content-button:hover {
-  background: #ef1e61;
-  box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
-}
+
 .main-content-price {
   font-weight: 500;
   font-size: 24px;
@@ -87,6 +93,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .main-content-old-price {
   line-height: 22px;
   text-decoration-line: line-through;
@@ -96,42 +103,52 @@
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 810px) {
   .wrapper-main-content {
     height: 553px;
   }
+
   .main-content-title {
     top: 0;
     font-size: 28px;
     margin-bottom: 10px;
   }
+
   .wrapper-main-content {
     align-items: flex-start;
   }
+
   .main-baner-content {
     justify-content: flex-start;
     position: absolute;
     top: 350px;
   }
+
   .main-content-wrapper-discount {
     margin-bottom: 19px;
   }
+
   .main-content-subtitle {
     font-size: 14px;
     margin-bottom: 16px;
   }
+
   .main-content-wrapper-for-button {
     width: 234px;
   }
+
   .main-content-button {
     width: 115px;
     height: 42px;
     font-size: 14px;
     line-height: 21px;
   }
+
   .main-content-price {
     font-size: 16px;
   }
+
   .main-content-old-price {
     font-size: 14px;
   }

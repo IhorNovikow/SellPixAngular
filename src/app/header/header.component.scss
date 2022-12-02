@@ -137,25 +137,7 @@
 .img-Icon_search360{
   display: none;
 }
-.wrapper-nav{
-  width: 100%;
-  height: 72px;
-  display: flex;
-  align-items: center;
-}
-.nav{
-  width: 100%;
-}
-.ul-list{
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-}
-.li-item:hover{
-  color: #E4014A;
-  cursor: pointer;
-}
+
 @media screen and (max-width: 1180px) {
   .wrapper-search {
       max-width: 450px;
@@ -163,7 +145,7 @@
 }
 
 @media screen and (max-width: 930px) {
-  .hr-line, .wrapper-nav{
+  .hr-line{
       display: none;
   }
   .header{
@@ -194,9 +176,7 @@
       height: 2.33px;
       background: #FFFFFF;
   }
-  .wrapper-nav{
-    display: none;
-}
+
 }
 
 @media screen and (max-width: 680px) {
@@ -262,4 +242,3 @@
     background-repeat: no-repeat;
   }
 }
-
