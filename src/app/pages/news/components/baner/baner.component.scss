@@ -1,0 +1,90 @@
+.baner-news {
+  height: 461px;
+  border-radius: 60px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  //style="margin-bottom: 100px;"
+}
+.wrapper-baner-content {
+  position: absolute;
+  top: 127px;
+  left: 70px;
+}
+.wrapper-content-information {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+.content-information-calendar,
+.content-information-view {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.content-information-time,
+.content-information-counter-view {
+  font-weight: 500;
+}
+.content-information-view {
+  margin-left: 20px;
+}
+.wrapper-content-title-h {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+}
+.btn-read {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 121px;
+  height: 54px;
+
+  background: #e4014a;
+  box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.45);
+  border-radius: 48px;
+  border: none;
+  margin-top: 17px;
+
+  font-weight: 500;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+  cursor: pointer;
+
+  &:hover {
+    background: #ef1e61;
+    box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .baner-news {
+    width: 100%;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 809px) {
+  .baner-news {
+    height: 345px;
+    border-radius: 30px;
+  }
+  .wrapper-baner-content {
+    left: 30px;
+  }
+  .wrapper-content-information {
+    margin-bottom: 20px;
+  }
+  .wrapper-content-title-h {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .btn-read {
+    width: 115px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

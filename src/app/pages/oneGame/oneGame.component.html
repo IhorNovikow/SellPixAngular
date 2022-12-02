@@ -1,0 +1,60 @@
+<main class="main">
+  <div
+    class="wrapper-backgroung"
+    [ngStyle]="{ backgroundImage: backgroundImage }"
+  ></div>
+
+  <div class="wrapper">
+    <div class="main-content">
+      <section class="main-wrapper-first-colum">
+        <section class="wrapper-cover-game">
+          <img
+            src="{{ someGame.img.average }}"
+            alt="coverGame"
+            class="coverGame"
+          />
+        </section>
+        <description-game [someGame]="someGame"></description-game>
+      </section>
+
+      <section class="main-wrapper-second-colum">
+        <section class="title-game">
+          <div class="wrapper-title-game">
+            <section class="main-wrapper-way">
+              <p><a class="router-link" routerLink="/">Главная</a>
+                 /
+                <a routerLink="/games" class="router-link">Игры</a>
+                /
+                <span>{{someGame.title}}</span>
+              </p>
+            </section>
+            <div class="">
+              <h2 class="title-game-h">Игры</h2>
+            </div>
+          </div>
+
+          <div class="wrapper-save-to-favorits">
+            <img src="../assets/icon//onegame/Icon_save.svg" alt="saveToFavorits" class="saveToFavorits">
+          </div>
+        </section>
+
+        <buy-game [someGame]="someGame" style="width: 100%"></buy-game>
+
+        <specification-game
+          [someGame]="someGame"
+          [view]="someGame.discription.discription"
+          style="width: 100%"
+        ></specification-game>
+
+        <description-game
+          [someGame]="someGame"
+          class="wrapper-description-game1220"
+        ></description-game>
+
+        <carusel-game [someGame]="someGame"></carusel-game>
+
+        <review-game [someGame]="someGame"></review-game>
+      </section>
+    </div>
+  </div>
+</main>

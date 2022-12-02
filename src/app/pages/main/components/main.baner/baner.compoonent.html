@@ -1,0 +1,24 @@
+<div
+class="wrapper-to-baner"
+[ngStyle]="{ backgroundImage: backgroundImage }"
+>
+  <div class="wrapper">
+    <div class="wrapper-main-content">
+      <section class="main-baner-content">
+        <p class="main-content-wrapper-discount">
+          <span>{{ oneItem.price.discount }} %</span>
+        </p>
+        <h2 class="main-content-title">{{ oneItem.title }}</h2>
+        <p class="main-content-subtitle">Открыт предзаказ на игру</p>
+        <div class="main-content-wrapper-for-button">
+          <button class="main-content-button">В корзину</button>
+          <p class="main-content-price">{{ oneItem.price.priceNow }} ₽</p>
+          <p class="main-content-old-price">
+            {{ oneItem.price.priceOld }} ₽
+          </p>
+        </div>
+      </section>
+      <section class="main-navigation-fon"></section>
+    </div>
+  </div>
+</div>

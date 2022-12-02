@@ -1,0 +1,40 @@
+<main class="main-news">
+  <div class="wrapper">
+
+    <div class="main-wrapper-title">
+      <section class="main-wrapper-way">
+        <a routerLink="/" class="router-link">Главная</a> /
+        <span>Новости</span>
+      </section>
+
+      <section class="title-game-h">
+        <h3 class="title-game-h2">
+          Интересные статьи
+        </h3>
+      </section>
+    </div>
+
+
+      <news-baner *ngFor="let item of newsPreview"
+        [newsShow]="item"
+      ></news-baner>
+
+    <div class="section-blog-wrapper-cards">
+      <news-card *ngFor="let item of fullNews"
+      [oneNews] = item
+      (click) = "openNews(item._id)"
+      ></news-card>
+
+      <news-card *ngFor="let item of fullNews"
+      [oneNews] = item
+      (click) = "openNews(item._id)"
+      ></news-card>
+
+      <news-card *ngFor="let item of fullNews"
+      [oneNews] = item
+      (click) = "openNews(item._id)"
+      ></news-card>
+
+    </div>
+  </div>
+  </main>

@@ -1,0 +1,14 @@
+<div
+  class="main-wrapper-section-secondBaner"
+  [ngStyle]="{ backgroundImage: backgroundImage }"
+>
+  <div class="wrapper-secondBaner-content">
+    <h2 class="main-secondBaner-content-title">{{ baner.title }}</h2>
+    <p class="main-content-subtitle">Открыт предзаказ на игру</p>
+    <div class="main-content-wrapper-for-button">
+      <button class="main-content-button">В корзину</button>
+      <p class="main-content-price">{{ baner.price.priceNow }} ₽</p>
+      <p class="main-content-old-price">{{ baner.price.priceOld }} ₽</p>
+    </div>
+  </div>
+</div>

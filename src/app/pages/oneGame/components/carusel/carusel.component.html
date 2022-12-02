@@ -1,0 +1,20 @@
+<div class="wrapper-carusel-scroll">
+  <section class="carousel-about-game">
+    <div class="wrapper-full-item"
+    [ngStyle]="{
+      width: width
+    }"
+    >
+      <div class="wrapper-one-item" *ngFor="let photo of someGame.photo">
+        <img src="{{photo}}" alt="Photo" class="photo-discription">
+      </div>
+    </div>
+<!--
+    <div class="wrapper-button-next-item">
+      <button class="btn-next-item">
+        <img src="../assets/icon/onegame/Icon_right.svg" alt="next-item" class="img-next-item">
+      </button>
+    </div>
+-->
+  </section>
+</div>

@@ -1,0 +1,82 @@
+.wrapper-qestion-and-answer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+
+  width: 1218px;
+  height: auto;
+
+  background: #19143e;
+  border-radius: 20px;
+}
+.wrapper-qestion {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  font-family: 'Bebas Neue';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  position: relative;
+}
+.wrapper-icon-qestion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 61px;
+  height: 61px;
+}
+.icon-open {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.icon-close {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.hr-qestion {
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 1158px;
+}
+@media screen and (max-width: 1220px) {
+  .wrapper-qestion-and-answer {
+      width: 100%;
+  }
+
+  .hr-qestion {
+    width: 100%;
+}
+}
+@media screen and (max-width: 809px) {
+  .box-title {
+    font-size: 14px;
+    line-height: 21px;
+    width: 60%;
+}
+.wrapper-qestion-and-answer {
+  padding: 20px;
+}
+.wrapper-icon-qestion{
+  width: 30px;
+  height: 30px;
+}
+.icon-open, .icon-close {
+  width: 10px;
+  height: 10px;
+}
+}

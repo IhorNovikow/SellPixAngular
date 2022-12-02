@@ -1,0 +1,39 @@
+<main class="main">
+  <div class="wrapper main-content">
+
+    <div class="main-wrapper-title">
+      <section class="main-wrapper-way">
+        <a routerLink="/" class="router-link">Главная</a> /
+        <span> Отзывы нашего магазина</span>
+      </section>
+
+      <section class="title-game-h">
+        <h3 class="title-game-h2">
+          <span class="red-word">Отзывы</span> нашего магазина
+        </h3>
+      </section>
+    </div>
+
+    <p class="description-question-page">
+      Все отзывы взяты из комментариев к товарам,
+      после входа в аккаунт вы сами сможете
+      написать любой отзыв и все его увидят
+    </p>
+
+    <line-review></line-review>
+
+    <section class="section-review-cards">
+      <review-card
+        *ngFor="let item of allReview"
+        [oneReview]="item"
+      ></review-card>
+    </section>
+
+    <!--
+    <button class="btn-show-more">
+      Показать еще
+    </button>
+    -->
+
+  </div>
+</main>

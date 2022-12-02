@@ -1,0 +1,58 @@
+.main-news {
+  padding: 60px 0 100px 0;
+  background: #140f36;
+}
+.main-wrapper-title {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.router-link {
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+.title-game-h {
+  margin-bottom: 15px;
+  margin-left: -1px;
+}
+.title-game-h2 {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.section-blog-wrapper-cards {
+  height: 750px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  gap: 30px;
+  justify-content: center;;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  overflow-y: auto;
+}
+@media screen and (max-width: 1220px) {
+  .section-blog-wrapper-cards {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 809px) {
+  .main-news {
+    padding: 40px 0 60px 0;
+  }
+  .title-game-h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .section-blog-wrapper-cards {
+    gap: 30px;
+    margin-top: 20px;
+  }
+}

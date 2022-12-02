@@ -1,0 +1,39 @@
+<main class="main main-one-news">
+  <section class="section-news-baner"
+  [ngStyle]="{ backgroundImage: backgroundImage }"
+  >
+  </section>
+  <section class="section-news-content">
+    <div class="wrapper-news-content-title">
+      <div routerLink="/news" class="wrapper-way router-link" >
+        <img src="../assets/icon/Icon_down.png" alt="Icon_down" class="icon-back">
+        <span>К списку статей</span>
+      </div>
+      <div class="wrapper-infomation-stats-news">
+        <div class="wrapper-statistic">
+          <img src="../assets/icon/mainSectionBlog/Icon_calendar.svg" alt="Icon_calendar" class="icon-stats-news">
+          <time class="stats-news-time">{{someNews.statistics.date | date: 'd MMMM y'}}</time>
+        </div>
+        <div class="wrapper-statistic">
+          <img src="../assets/icon/mainSectionBlog/Icon_view.svg" alt="Icon_view" class="icon-stats-news">
+          <span class="count-view">{{someNews.statistics.view}}</span>
+        </div>
+        <div class="wrapper-statistic">
+          <img src="../assets/icon/mainSectionBlog/review.svg" alt="review" class="icon-stats-news">
+          <span class="count-coments">{{someNews.statistics.coments}}</span>
+        </div>
+      </div>
+      <div class="wrapper-title-news">
+          <h3 class="wrapper-title-news">{{someNews.title}}</h3>
+      </div>
+    </div>
+    <div class="wrapper-news-main-content">
+      <p>{{someNews.discription.mainText}}
+      </p>
+      <img src="{{someNews.img.average}}" alt="photoGame" class="photo-game">
+      <h3 class="subtitle-news">Подзаголовок</h3>
+      <p>{{someNews.discription.subText}}</p>
+    </div>
+
+  </section>
+</main>

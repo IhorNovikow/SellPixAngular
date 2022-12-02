@@ -1,0 +1,50 @@
+<header class="header">
+  <div class="wrapper">
+    <div class="wrapper-header">
+      <section class="wrapper-title" routerLink="/" >
+        <img src="../assets/icon/Logo.png" alt="Logo" class="header-llogo-title">
+      </section>
+      <section class="wrapper-btn-catalog">
+        <button class="btn-catalog" routerLink="/games">
+          <span class="name-btn-catalog">Каталог</span>
+          <img src="../assets/icon/Icon_apps.svg" alt="Icon_apps" class="img-catalog">
+        </button>
+      </section>
+      <section class="wrapper-search">
+        <img src="../assets/icon/Icon_search360.svg" alt="Icon_search" class="img-Icon_search360">
+        <input type="search" placeholder="Поиск" class="input-search">
+        <img src="../assets/icon/Icon_search.svg" alt="Icon_search" class="img-Icon_search">
+      </section>
+      <section class="wrapper-save-basket">
+        <img src="../assets/icon/Icon_save.svg" alt="Icon_save" class="img-Icon_save">
+        <div class="wrapper-basket">
+          <img src="../assets/icon/Icon_basket.svg" alt="Icon_basket" class="img-Icon_basket">
+          <div class="circle">2</div>
+        </div>
+      </section>
+      <section class="wrapper-user" routerLink="/profile">
+        <img src="../assets/icon/Icon_User.png" alt="Icon_User" class="img-Icon_User">
+      </section>
+      <section class="wrapper-burger">
+        <span class="burger-line first-burger-line"></span>
+        <span class="burger-line second-burger-line"></span>
+        <span class="burger-line third-burger-line"></span>
+      </section>
+
+    </div>
+
+    <hr class="hr-line">
+    <div class="wrapper-nav">
+      <nav class="nav">
+        <ul class="ul-list">
+          <li class="li-item" routerLink="/aboutShop" routerLinkActive="active-link">О нашем магазине</li>
+          <li class="li-item" (click)="routerToPage()" routerLinkActive="active-link">Гарантии магазина</li>
+          <li class="li-item" routerLink="/reviews" routerLinkActive="active-link">Отзывы о магазине</li>
+          <li class="li-item" routerLink="/qestion" routerLinkActive="active-link">Вопрос-ответ</li>
+          <li class="li-item" routerLink="/news" routerLinkActive="active-link">Интересные статьи</li>
+          <li class="li-item" routerLink="/cooperation" routerLinkActive="active-link">Сотрудничество</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
