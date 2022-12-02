@@ -10,5 +10,3 @@ export class CooperationComponent implements OnInit {
 
   ngOnInit(): void {}
 }
-
-//cooperation.component

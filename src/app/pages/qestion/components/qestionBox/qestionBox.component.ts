@@ -16,7 +16,3 @@ export class QestionBoxComponent implements OnInit {
     this.view = !this.view
   }
 }
-
-
-
-//qestionBox.component

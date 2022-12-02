@@ -25,11 +25,6 @@ export class OneGameComponent implements OnInit {
       this.someGame = <Game>this.http.result.find((el)=>{
          return el._id === params.id
       })
-      //console.log(this.someGame);
-
-      /*this.someGame = <Game>this.someAnsver.find((el)=>{
-        return el._id === 'w'
-     })*/
       this.backgroundImage = `linear-gradient(
         0deg,
         rgba(20, 15, 54, 0.9) 16.95%,

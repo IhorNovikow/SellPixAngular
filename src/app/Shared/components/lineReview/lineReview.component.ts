@@ -12,5 +12,3 @@ export class LineReviewComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-
-//lineReview.component

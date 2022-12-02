@@ -14,9 +14,6 @@ import { SharedModule } from '../../Shared/shared.module';
     CommonModule,
     RouterModule.forChild([
       { path:'', component: AboutUsComponent },
-      //{ path:'aboutShop', component: AboutUsComponent },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
-      /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ]),
   ],
   providers: [],

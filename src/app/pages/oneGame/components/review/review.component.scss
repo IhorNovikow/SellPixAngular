@@ -28,12 +28,11 @@
   padding: 30px;
   resize: none;
   font-weight: 500;
-  font-feature-settings: "liga" off;
   color: #ffffff;
 }
 .textarea-text-coments::placeholder {
   font-weight: 500;
-  font-feature-settings: 'liga' off;
+
   color: #716ba8;
   background: #211946;
 }
@@ -57,7 +56,7 @@
   border: none;
 
   font-weight: 500;
-  font-feature-settings: 'liga' off;
+
   color: #ffffff;
   cursor: pointer;
   &:hover {
@@ -72,7 +71,6 @@
 }
 
 .wrapper-blok-coment {
-  //height: 100px;
   height: auto;
   padding: 20px 30px;
   display: flex;
@@ -154,10 +152,7 @@
       width: 200px;
       height: 40px;
   }
-/*
-  .wrapper-content-coment{
-      height: 50px;
-  }*/
+
 }
 @media screen and (max-width: 692px) {
   .wrapper-review{

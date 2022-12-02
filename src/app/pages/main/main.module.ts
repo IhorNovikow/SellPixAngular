@@ -20,8 +20,6 @@ import { SecondBanerComponent } from './components/second.baner/second.baner.com
       { path: 'game/:id', loadChildren: () => import('../oneGame/oneGame.module').then(mod => mod.OneGameModule) },
       { path: 'news', loadChildren: () => import('../news/news.module').then(mod => mod.NewsModule) },
       { path: 'news/:id', loadChildren: () => import('../oneNews/oneNews.module').then(mod => mod.OneNewsModule) },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
-      /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ])],
     exports: [],
 })

@@ -54,7 +54,3 @@ export class ConfidenceCardComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-
-
-
-//confidence.card

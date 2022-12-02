@@ -25,8 +25,6 @@ import { SharedModule } from '../../Shared/shared.module';
     ReactiveFormsModule,
     RouterModule.forChild([
       { path: '', component: OneGameComponent },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
-      /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ]),
   ],
 })

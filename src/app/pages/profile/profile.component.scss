@@ -1,6 +1,8 @@
 .main-profile {
   padding: 60px 0 100px 0;
   background: #140f36;
+  min-height: 1014px;
+
 }
 .main-wrapper-title {
   display: flex;
@@ -57,7 +59,6 @@
   height: 64px;
 
   font-weight: 500;
-  font-feature-settings: "liga" off;
 
   &:hover *{
     fill: #ffffff;
@@ -74,7 +75,6 @@
   height: 64px;
 
   font-weight: 500;
-  font-feature-settings: "liga" off;
   background: #e4014a;
 
   & *{
@@ -86,14 +86,6 @@
   height: 20px;
 }
 
-/*
-.icon-navigation-box-active * {
-  fill: #ffffff;
-}
-.icon-navigation-box-off * {
-  fill: #e4014a;
-}
-*/
 .li-navigation-box-end {
   border-radius: 0 0 30px 30px;
   color: #716ba8;

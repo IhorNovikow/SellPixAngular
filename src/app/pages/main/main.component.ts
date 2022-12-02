@@ -37,9 +37,6 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     //this.http.getData()
-    //console.log('http', this.http)
-    //console.log('http.previewGame', this.http.previewGame)
-    //console.log('http.previewGame.length', this.http.previewGame.length)
     this.width = String(this.http.previewGame.length * 100) + '%';
     this.http.result.forEach((el) => {
       this.allReview = this.allReview.concat(el.reviews);

@@ -13,9 +13,6 @@ import { OneNewsComponent } from './oneNews.component';
     CommonModule,
     RouterModule.forChild([
       { path:'', component: OneNewsComponent },
-      //{ path: 'game/:id', loadChildren: () => import('../oneGame/oneGame.module').then(mod => mod.OneGameModule) },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
-      /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ])],
 })
 export class OneNewsModule {}
