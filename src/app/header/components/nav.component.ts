@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'nav-header',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class NavComponent implements OnInit {
   itemNav: string[] = [
     'О нашем магазине',
     'Гарантии магазина',
@@ -25,3 +25,4 @@ export class HeaderComponent implements OnInit {
     alert(message);
   }
 }
+
