@@ -44,11 +44,11 @@ export const ansverServ: Game[] = [
   {
     _id: 'q',
     img: {
-      big: '../../assets/photo/main-game/Battlefield_2042/baner/fon.png',
+      big: './assets/photo/main-game/Battlefield_2042/baner/fon.png',
       average:
-        '../../assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
+        './assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
       small:
-        '../../assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
+        './assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
     },
     title: 'Battlefield 2042',
     category: {
@@ -98,11 +98,11 @@ export const ansverServ: Game[] = [
       activation: 'Steam',
     },
     photo: [
-      '../../assets/photo/main-game/Battlefield_2042/photo/photo1.jpg',
-      '../../assets/photo/main-game/Battlefield_2042/photo/photo2.jpg',
-      '../../assets/photo/main-game/Battlefield_2042/photo/photo3.jpg',
-      '../../assets/photo/main-game/Battlefield_2042/photo/photo4.jpg',
-      '../../assets/photo/main-game/Battlefield_2042/photo/photo5.jpg',
+      './assets/photo/main-game/Battlefield_2042/photo/photo1.jpg',
+      './assets/photo/main-game/Battlefield_2042/photo/photo2.jpg',
+      './assets/photo/main-game/Battlefield_2042/photo/photo3.jpg',
+      './assets/photo/main-game/Battlefield_2042/photo/photo4.jpg',
+      './assets/photo/main-game/Battlefield_2042/photo/photo5.jpg',
     ],
     reviews: [
       {
