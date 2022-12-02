@@ -55,7 +55,7 @@ export const ansverServ: Game[] = [
       new: true,
       hit: true,
       popular: true,
-      preview: false,
+      preview: true,
       secondBaner: true,
     },
     price: {
@@ -145,16 +145,16 @@ export const ansverServ: Game[] = [
   {
     _id: 'w',
     img: {
-      big: '../../assets/photo/main-game/Stray/baner/F4tauV8VGO6x.jpg',
-      average: '../../assets/photo/main-game/Stray/average/Stray.png',
-      small: '../../assets/photo/main-game/Stray/average/Stray.png',
+      big: './assets/photo/main-game/Stray/baner/F4tauV8VGO6x.jpg',
+      average: './assets/photo/main-game/Stray/average/Stray.png',
+      small: './assets/photo/main-game/Stray/average/Stray.png',
     },
     title: 'Stray',
     category: {
       new: true,
       hit: true,
       popular: true,
-      preview: false,
+      preview: true,
       secondBaner: false,
     },
     price: {
@@ -199,11 +199,11 @@ export const ansverServ: Game[] = [
     },
 
     photo: [
-      '../../assets/photo/main-game/Stray/photo/photo1.jpg',
-      '../../assets/photo/main-game/Stray/photo/photo2.jpg',
-      '../../assets/photo/main-game/Stray/photo/photo3.jpg',
-      '../../assets/photo/main-game/Stray/photo/photo4.jpg',
-      '../../assets/photo/main-game/Stray/photo/photo5.jpg',
+      './assets/photo/main-game/Stray/photo/photo1.jpg',
+      './assets/photo/main-game/Stray/photo/photo2.jpg',
+      './assets/photo/main-game/Stray/photo/photo3.jpg',
+      './assets/photo/main-game/Stray/photo/photo4.jpg',
+      './assets/photo/main-game/Stray/photo/photo5.jpg',
     ],
     reviews: [
       {
@@ -246,11 +246,11 @@ export const ansverServ: Game[] = [
   {
     _id: 'e',
     img: {
-      big: '../../assets/photo/main-game/Cities_Skylines/baner/cities_skylines.jpg',
+      big: './assets/photo/main-game/Cities_Skylines/baner/cities_skylines.jpg',
       average:
-        '../../assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
+        './assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
       small:
-        '../../assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
+        './assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
     },
     title: 'Cities Skylines',
     category: {
@@ -302,11 +302,11 @@ export const ansverServ: Game[] = [
     },
 
     photo: [
-      '../../assets/photo/main-game/Cities_Skylines/photo/photo1.jpg',
-      '../../assets/photo/main-game/Cities_Skylines/photo/photo2.jpg',
-      '../../assets/photo/main-game/Cities_Skylines/photo/photo3.jpg',
-      '../../assets/photo/main-game/Cities_Skylines/photo/photo4.jpg',
-      '../../assets/photo/main-game/Cities_Skylines/photo/photo5.jpg',
+      './assets/photo/main-game/Cities_Skylines/photo/photo1.jpg',
+      './assets/photo/main-game/Cities_Skylines/photo/photo2.jpg',
+      './assets/photo/main-game/Cities_Skylines/photo/photo3.jpg',
+      './assets/photo/main-game/Cities_Skylines/photo/photo4.jpg',
+      './assets/photo/main-game/Cities_Skylines/photo/photo5.jpg',
     ],
     reviews: [
       {
@@ -349,9 +349,9 @@ export const ansverServ: Game[] = [
   {
     _id: 'r',
     img: {
-      big: '../../assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
-      average: '../../assets/photo/main-game/Dead_Cells/average/deadCell.png',
-      small: '../../assets/photo/main-game/Dead_Cells/average/deadCell.png',
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+      small: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
     },
     title: 'Dead Cells',
     category: {
@@ -403,11 +403,11 @@ export const ansverServ: Game[] = [
     },
 
     photo: [
-      '../../assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
-      '../../assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
-      '../../assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
-      '../../assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
-      '../../assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
     ],
     reviews: [
       {
@@ -472,9 +472,9 @@ export const someNews: News[] = [
     preview: true,
     _id: '1qwerty',
     img: {
-      big: '../../assets/photo/news/news1/backgroundBaner.png',
-      average: '../../assets/photo/news/news1/photoGame.png',
-      small: '../../assets/photo/news/news1/cardBlog01.png',
+      big: './assets/photo/news/news1/backgroundBaner.png',
+      average: './assets/photo/news/news1/photoGame.png',
+      small: './assets/photo/news/news1/cardBlog01.png',
     },
     statistics: {
       date: new Date(),
@@ -520,9 +520,9 @@ export const someNews: News[] = [
     preview: false,
     _id: '2qwerty',
     img: {
-      big: '../../assets/photo/news/news1/backgroundBaner.png',
-      average: '../../assets/photo/news/news1/photoGame.png',
-      small: '../../assets/photo/news/news2/cardBlog02.png',
+      big: './assets/photo/news/news1/backgroundBaner.png',
+      average: './assets/photo/news/news1/photoGame.png',
+      small: './assets/photo/news/news2/cardBlog02.png',
     },
     statistics: {
       date: new Date(),
@@ -567,9 +567,9 @@ export const someNews: News[] = [
     preview: false,
     _id: '3qwerty',
     img: {
-      big: '../../assets/photo/news/news1/backgroundBaner.png',
-      average: '../../assets/photo/news/news1/photoGame.png',
-      small: '../../assets/photo/news/news3/cardBlog03.png',
+      big: './assets/photo/news/news1/backgroundBaner.png',
+      average: './assets/photo/news/news1/photoGame.png',
+      small: './assets/photo/news/news3/cardBlog03.png',
     },
     statistics: {
       date: new Date(),

@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'newsPage', loadChildren: () => import('./pages/oneNews/oneNews.module').then(mod => mod.OneNewsModule) },
   { path: 'reviews', loadChildren: () => import('./pages/reviews/reviews.module').then(mod => mod.ReviewsModule) },
   { path: 'qestion', loadChildren: () => import('./pages/qestion/qestion.module').then(mod => mod.QestionModule) },
+  { path: 'profile', loadChildren: () => import('./pages/profile/profile.module').then(mod => mod.ProfileModule) },
 ];
 @NgModule({
   imports: [

@@ -15,6 +15,7 @@ export class HttpServis {
   ) {}
 
   getData() {
+    
     this.http.get<Game[]>('https://serv-sell-pix.vercel.app/get/games')
       .subscribe((response) => {
         this.result = response;
@@ -22,11 +23,6 @@ export class HttpServis {
           return el.category.preview;
         });
       });
-  }
 
-  httpRequest(word: string) {
-    if (word.trim() !== '' && word.length > 2) {
-      this.getData();
-    }
   }
 }

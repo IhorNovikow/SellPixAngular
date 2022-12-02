@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpServis } from '../../core/servis/http.servis';
+import { ansverServ } from '../../data/some.serv.data';
 import {
   Game,
   Review,
@@ -15,6 +16,14 @@ import {
 })
 
 export class MainComponent implements OnInit {
+  someAnswer: Game[] = ansverServ;
+  somePriviewGame: Game[] = this.someAnswer.filter((el) => {
+    return el.category.preview;
+  });
+  someWidth: string = String(this.somePriviewGame.length * 100) + '%';
+  someAllRevie: Review[] = [];
+
+
   allReview: Review[] = [];
   secondBaner: Game;
   viewNews: News[] = someNews.slice(0, 3);
@@ -27,7 +36,10 @@ export class MainComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-    this.http.getData()
+    //this.http.getData()
+    //console.log('http', this.http)
+    //console.log('http.previewGame', this.http.previewGame)
+    //console.log('http.previewGame.length', this.http.previewGame.length)
     this.width = String(this.http.previewGame.length * 100) + '%';
     this.http.result.forEach((el) => {
       this.allReview = this.allReview.concat(el.reviews);

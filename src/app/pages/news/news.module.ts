@@ -1,7 +1,3 @@
-
-//news.component
-
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -19,14 +15,7 @@ import { NewsBanerComponent } from './components/baner/baner.component';
     CommonModule,
     RouterModule.forChild([
       { path: '', component: NewsComponent },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
     ]),
   ],
 })
 export class NewsModule {}
-
-
-/*
-news.component
-
-*/

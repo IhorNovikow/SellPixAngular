@@ -15,6 +15,7 @@
   height: 60px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .img-title{
   width: 100%;
@@ -36,17 +37,14 @@
   border-radius: 48px;
   border: none;
   cursor: pointer;
-}
-.btn-catalog:hover{
-  background: #EF1E61;
-  box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
+
+  &:hover{
+    background: #EF1E61;
+    box-shadow: 0px 2px 30px rgba(228, 1, 74, 0.65);
+  }
 }
 .name-btn-catalog{
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
   font-feature-settings: 'liga' off;
   color: #FFFFFF;
   margin-right: 13px
@@ -69,11 +67,7 @@
   padding-left: 52px;
   padding-right: 10px;
 
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -85,11 +79,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .input-search::placeholder{
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 140%;
   color: #716BA8;
 }
 .img-Icon_search{
@@ -123,12 +113,7 @@
   height: 22px;
   background: #E4014A;
   border-radius: 100%;
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;

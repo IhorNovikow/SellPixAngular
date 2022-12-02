@@ -11,6 +11,6 @@ export class ReviewComponent implements OnInit {
   @Input() someGame: Game;
   constructor() {}
   ngOnInit(): void {
-    console.log({'this.someGame.reviews': this.someGame.reviews});
+    //console.log({'this.someGame.reviews': this.someGame.reviews});
   }
 }
