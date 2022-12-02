@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ConfidenceCardComponent implements OnInit {
   cardInformation = [
     {
-      img: '../assets/icon/main-confidence/key.svg',
+      img: './assets/icon/main-confidence/key.svg',
       alt: 'key',
       title: 'Официальные ключи',
       discription: `
@@ -19,7 +19,7 @@ export class ConfidenceCardComponent implements OnInit {
       и многие вопросы мы можем решать очень оперативно.`,
     },
     {
-      img: '../assets/icon/main-confidence/star.svg',
+      img: './assets/icon/main-confidence/star.svg',
       alt: 'star',
       title: 'Гарантия качества',
       discription: `
@@ -29,7 +29,7 @@ export class ConfidenceCardComponent implements OnInit {
       Разнообразный и богатый опыт`,
     },
     {
-      img: '../assets/icon/main-confidence/review.svg',
+      img: './assets/icon/main-confidence/review.svg',
       alt: 'message',
       title: 'Отзывы на товары',
       discription: `
@@ -39,7 +39,7 @@ export class ConfidenceCardComponent implements OnInit {
       и многие вопросы мы можем решать очень оперативно.`,
     },
     {
-      img: '../assets/icon/main-confidence/shield.svg',
+      img: './assets/icon/main-confidence/shield.svg',
       alt: 'shield',
       title: 'Официальные ключи',
       discription: `
