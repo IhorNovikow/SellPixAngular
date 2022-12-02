@@ -15,9 +15,6 @@ import { QestionBoxComponent } from './components/qestionBox/qestionBox.componen
     CommonModule,
     RouterModule.forChild([
       { path:'', component: QestionComponent },
-      //{ path: 'game/:id', loadChildren: () => import('../oneGame/oneGame.module').then(mod => mod.OneGameModule) },
-      //{ path: '',  loadChildren: () => import('../AuthModule/auth.module').then(mod => mod.AuthModule) },
-      /*{ path: '**', component: ErrorComponent, canActivate: [AuthGuard] },*/
     ])],
 })
 export class QestionModule {}

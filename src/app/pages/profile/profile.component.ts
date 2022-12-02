@@ -12,4 +12,3 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 }
-//li-navigation-box-active

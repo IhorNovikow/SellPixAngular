@@ -40,7 +40,6 @@
 
 .content-line-description {
   font-weight: 500;
-  font-feature-settings: "liga" off;
 }
 
 .buy-game-second-line {
@@ -64,7 +63,6 @@
   border: none;
 
   font-weight: 500;
-  font-feature-settings: "liga" off;
   color: #ffffff;
   cursor: pointer;
   &:hover {
@@ -145,11 +143,7 @@
     flex-direction: column;
     gap: 8px;
   }
-  /*
-  .main-wrapper-way {
-    font-size: 14px;
-    line-height: 21px;
-  }*/
+
   .title-game-h2 {
     font-size: 28px;
     line-height: 28px;

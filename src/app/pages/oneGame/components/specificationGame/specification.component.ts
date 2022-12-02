@@ -35,5 +35,3 @@ export class SpecificationGameComponent implements OnInit {
     }
   }
 }
-//specification.component
-//title-description-active

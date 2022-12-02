@@ -16,12 +16,3 @@ export class CaruselComponent implements OnInit {
 
   }
 }
-
-//carusel.component
-`
-[ngStyle]="{
-  width: width
-}"
-<carusel-game [someGame]="someGame"></carusel-game>
-
-`

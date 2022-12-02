@@ -49,6 +49,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  text-align: center;
 }
 .title-item {
   font-family: "Bebas Neue";
@@ -106,7 +107,6 @@
 }
 .discont-title {
   font-weight: 500;
-  font-feature-settings: "liga" off;
 }
 .discont-subtitle {
   color: #716ba8;
@@ -143,7 +143,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  font-feature-settings: "liga" off;
   color: #716ba8;
 }
 .margin-min {
@@ -172,7 +171,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  font-feature-settings: "liga" off;
   color: #716ba8;
 }
 .margin-pl {
