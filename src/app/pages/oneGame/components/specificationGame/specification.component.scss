@@ -17,11 +17,6 @@
   gap: 30px;
 }
 .title-descrioption{
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #716BA8;
   height: 34px;
   cursor: pointer;
@@ -32,12 +27,6 @@
 }
 .content-description-game{
   margin: 30px;
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
   overflow-y: auto;
 }
 .wrapper-description-game1220{
@@ -96,21 +85,7 @@
   .wrapper-title-description-section{
       overflow-x: scroll;
   }
-
-  .title-descrioption1{
-      width: 78px;
-  }
-  .title-descrioption2{
-      width: 178px;
-  }
-  .title-descrioption3{
-      width: 78px;
-  }
   .title-descrioption{
-      font-family: 'Gilroy';
-      font-style: normal;
-      font-weight: 400;
       height: 30px;
-      cursor: pointer;
   }
 }

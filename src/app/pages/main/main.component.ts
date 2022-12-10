@@ -37,6 +37,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     //this.http.getData()
+    console.log(this.someAnswer.length)
     this.width = String(this.http.previewGame.length * 100) + '%';
     this.http.result.forEach((el) => {
       this.allReview = this.allReview.concat(el.reviews);
@@ -49,7 +50,7 @@ export class MainComponent implements OnInit {
     this.left = String(-Number(id) * 100 + 100) + '%';
   }
 
-  routeOneGame(id: string){
+  routeOneGame(id: number){
     this.router.navigate([`/game/${id}`]);
   }
   openNews(id: string){

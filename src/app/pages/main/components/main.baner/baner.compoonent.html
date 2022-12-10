@@ -14,7 +14,7 @@ class="wrapper-to-baner"
           <button class="main-content-button">В корзину</button>
           <p class="main-content-price">{{ oneItem.price.priceNow }} ₽</p>
           <p class="main-content-old-price">
-            {{ oneItem.price.priceOld }} ₽
+            {{oneItem.price.priceNow * (1 + oneItem.price.discount / 100) | number: '1.0-0'}} ₽
           </p>
         </div>
       </section>

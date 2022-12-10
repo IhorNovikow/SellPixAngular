@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GetGameServis } from '../core/service/getGame.service';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
     'Сотрудничество',
   ];
 
-  constructor() {}
+  constructor(public getGame: GetGameServis) {}
 
   ngOnInit(): void {}
 

@@ -14,7 +14,7 @@ export class GamesComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  routeOneGame(id: string){
+  routeOneGame(id: number){
     this.router.navigate([`/game/${id}`]);
   }
 }

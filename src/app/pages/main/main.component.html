@@ -47,24 +47,6 @@
           id="{{item._id}}"
           (click) = "routeOneGame(item._id)"
         ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
       </div>
     </div>
   </section>
@@ -92,24 +74,6 @@
         <game-card
           *ngFor="let item of http.result; let i = index"
           (click) = "routeOneGame(item._id)"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
-          [oneGame]="item"
-          #cardGame
-          id="{{item._id}}"
-        ></game-card>
-        <game-card
-          *ngFor="let item of http.result; let i = index"
           [oneGame]="item"
           #cardGame
           id="{{item._id}}"

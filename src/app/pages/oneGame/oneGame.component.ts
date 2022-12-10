@@ -23,7 +23,9 @@ export class OneGameComponent implements OnInit {
     this.route.params.subscribe((params: Params) => {
 
       this.someGame = <Game>this.http.result.find((el)=>{
-         return el._id === params.id
+        console.log('el._id', el._id)
+        console.log('params.id', params.id)
+         return String(el._id) === params.id
       })
       this.backgroundImage = `linear-gradient(
         0deg,
@@ -33,5 +35,6 @@ export class OneGameComponent implements OnInit {
         ), url(${this.someGame.img.big})`;
    });
   }
-
+  // url(${this.someGame.img.big})`;
+    //https://www.digiseller.ru/preview/987024/p1_3424137_1234d445.jpg
 }
