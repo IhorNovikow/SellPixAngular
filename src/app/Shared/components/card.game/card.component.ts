@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../data/some.serv.data';
+import { GameMongo } from '../../../core/interface/mongoGame';
 
 @Component({
   selector: 'game-card',
@@ -8,7 +8,7 @@ import { Game } from '../../../data/some.serv.data';
 })
 
 export class GameCardComponent implements OnInit {
-  @Input()oneGame: Game;
+  @Input()oneGame: GameMongo;
   constructor() { }
 
   ngOnInit(): void {

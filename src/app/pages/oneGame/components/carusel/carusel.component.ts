@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'carusel-game',
@@ -8,7 +9,7 @@ import { Game } from '../../../../data/some.serv.data';
 })
 
 export class CaruselComponent implements OnInit {
-  @Input() someGame!: Game;
+  @Input() someGame!: GameMongo;
   width: string;
   constructor() {}
   ngOnInit(): void {

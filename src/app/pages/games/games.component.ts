@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Game, ansverServ } from '../../data/some.serv.data';
+import { GetGameServis } from '../../core/service/getGame.service';
 
 @Component({
   selector: 'games-page',
@@ -9,12 +9,13 @@ import { Game, ansverServ } from '../../data/some.serv.data';
   styleUrls: ['./games.component.scss'],
 })
 export class GamesComponent implements OnInit {
-  someData: Game[] = ansverServ;
-  constructor(private router: Router) {}
+  constructor(private router: Router,
+    public http: GetGameServis
+    ) {}
 
   ngOnInit(): void {}
 
-  routeOneGame(id: number){
+  routeOneGame(id: string){
     this.router.navigate([`/game/${id}`]);
   }
 }

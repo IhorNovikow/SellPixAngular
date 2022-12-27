@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'second-baner',
@@ -8,7 +9,7 @@ import { Game } from '../../../../data/some.serv.data';
 })
 
 export class SecondBanerComponent implements OnInit {
-  @Input() baner: Game;
+  @Input() baner: GameMongo;
   backgroundImage: string;
   constructor() { }
 

@@ -1,4 +1,4 @@
-<main class="main">
+<main class="main" *ngIf="canDraw">
   <div
     class="wrapper-backgroung"
     [ngStyle]="{ backgroundImage: backgroundImage }"
@@ -53,8 +53,9 @@
 
         <carusel-game [someGame]="someGame"></carusel-game>
 
-        <review-game [someGame]="someGame"></review-game>
+        <review-game [reviews]="getGame.responseReviews"></review-game>
       </section>
     </div>
   </div>
+
 </main>

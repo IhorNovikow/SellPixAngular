@@ -11,7 +11,7 @@ class="wrapper-to-baner"
         <h2 class="main-content-title">{{ oneItem.title }}</h2>
         <p class="main-content-subtitle">Открыт предзаказ на игру</p>
         <div class="main-content-wrapper-for-button">
-          <button class="main-content-button">В корзину</button>
+          <button class="main-content-button">Купить</button>
           <p class="main-content-price">{{ oneItem.price.priceNow }} ₽</p>
           <p class="main-content-old-price">
             {{oneItem.price.priceNow * (1 + oneItem.price.discount / 100) | number: '1.0-0'}} ₽

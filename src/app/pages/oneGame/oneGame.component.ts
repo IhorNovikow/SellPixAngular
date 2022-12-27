@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { HttpServis } from '../../core/servis/http.servis';
-import { Game, ansverServ } from '../../data/some.serv.data';
+//import { HttpServis } from '../../core/servis/http.servis';
+//import { Game, ansverServ } from '../../data/some.serv.data';
+import { GetGameServis } from '../../core/service/getGame.service';
+import { GameMongo } from '../../core/interface/mongoGame';
 
 @Component({
   selector: 'game-page',
@@ -10,23 +12,25 @@ import { Game, ansverServ } from '../../data/some.serv.data';
 })
 
 export class OneGameComponent implements OnInit {
-  someGame: Game;
-  someAnsver: Game[] = ansverServ;
+  someGame: GameMongo;
   backgroundImage: string;
-  constructor( public http: HttpServis,
+  canDraw: boolean = false;
+
+  constructor(// public http: HttpServis,
     private route: ActivatedRoute,
+    public getGame: GetGameServis
     ) {}
 
 
   ngOnInit(): void {
-
     this.route.params.subscribe((params: Params) => {
+      const IDGame: number = Number(params.id)
+      this.getGame.getReviews(IDGame)
 
-      this.someGame = <Game>this.http.result.find((el)=>{
-        console.log('el._id', el._id)
-        console.log('params.id', params.id)
-         return String(el._id) === params.id
+      this.someGame = <GameMongo>this.getGame.mongoGame.find((el)=>{
+         return String(el.digiSellerID) === params.id
       })
+
       this.backgroundImage = `linear-gradient(
         0deg,
         rgba(20, 15, 54, 0.9) 16.95%,
@@ -34,7 +38,7 @@ export class OneGameComponent implements OnInit {
         rgba(20, 15, 54, 0) 58.25%
         ), url(${this.someGame.img.big})`;
    });
+   this.canDraw = true
   }
-  // url(${this.someGame.img.big})`;
-    //https://www.digiseller.ru/preview/987024/p1_3424137_1234d445.jpg
 }
+

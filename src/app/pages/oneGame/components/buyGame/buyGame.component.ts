@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'buy-game',
@@ -7,7 +8,7 @@ import { Game } from '../../../../data/some.serv.data';
   styleUrls: ['./buyGame.component.scss']
 })
 export class BuyGameComponent implements OnInit {
-  @Input() someGame: Game;
+  @Input() someGame: GameMongo;
   constructor() { }
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'main-baner',
@@ -8,7 +8,7 @@ import { Game } from '../../../../data/some.serv.data';
 })
 export class MainBaner implements OnInit {
 
-  @Input() oneItem: Game;
+  @Input() oneItem: GameMongo;
 
   backgroundImage: string;
   constructor() { }

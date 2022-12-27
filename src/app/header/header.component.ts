@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetGameServis } from '../core/service/getGame.service';
+import { ModalBurgerServis } from '../core/service/modalBurger.service';
 
 @Component({
   selector: 'app-header',
@@ -7,22 +8,11 @@ import { GetGameServis } from '../core/service/getGame.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  itemNav: string[] = [
-    'О нашем магазине',
-    'Гарантии магазина',
-    'Отзывы о магазине',
-    'Вопрос-ответ',
-    'Интересные статьи',
-    'Сотрудничество',
-  ];
-
-  constructor(public getGame: GetGameServis) {}
+  constructor(
+    public getGame: GetGameServis,
+    public ModalBurgerServis: ModalBurgerServis
+    ) {}
 
   ngOnInit(): void {}
 
-  routerToPage() {
-    const message: string =
-      'sorry, i havent this page. it page in stage development';
-    alert(message);
-  }
 }

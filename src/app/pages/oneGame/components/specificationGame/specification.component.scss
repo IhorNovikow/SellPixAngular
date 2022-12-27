@@ -37,7 +37,8 @@
       width: 100%;
       max-width: 857px;
       height: auto;
-      min-height: 293px;
+      //min-height: 293px;
+      min-height: 317px;
       max-height: 317px;
   }
   .wrapper-description-game1220{
@@ -50,8 +51,8 @@
 @media screen and (max-width: 745px) {
   .description-game {
       width: 100%;
-      height: auto;
-      max-height: 364px;
+      //height: auto;
+      //max-height: 364px;
   }
   .title-line-discription, .discription-title-line-discription {
       font-size: 14px;
@@ -69,7 +70,7 @@
       margin: 20px;
       font-size: 14px;
       line-height: 21px;
-      max-height: 270px;
+      max-height: 226px;
   }
 
 }
