@@ -9,6 +9,7 @@ import {
 import { GameMongo } from '../interface/mongoGame';
 
 @Injectable({ providedIn: 'root' })
+
 export class GetGameServis {
   responseGame: DigiGame[];
   responseReviews: DigiReview;

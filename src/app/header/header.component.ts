@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetGameServis } from '../core/service/getGame.service';
 import { ModalBurgerServis } from '../core/service/modalBurger.service';
+import { ModalSearchServis } from '../core/service/modalSearch.service';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +9,9 @@ import { ModalBurgerServis } from '../core/service/modalBurger.service';
 })
 export class HeaderComponent implements OnInit {
   constructor(
-    public getGame: GetGameServis,
-    public ModalBurgerServis: ModalBurgerServis
+    public ModalBurgerServis: ModalBurgerServis,
+    public ModalSearchServis: ModalSearchServis,
     ) {}
 
   ngOnInit(): void {}
-
 }

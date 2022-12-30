@@ -14,9 +14,36 @@
       </section>
 
       <section class="wrapper-search">
-        <img src="./assets/icon/Icon_search360.svg" alt="Icon_search" class="img-Icon_search360" >
-        <input type="search" placeholder="Поиск" class="input-search">
-        <img src="./assets/icon/Icon_search.svg" alt="Icon_search" class="img-Icon_search" (click)="getGame.getInfo()">
+        <img src="./assets/icon/Icon_search.svg" alt="Icon_search" class="img-Icon_search">
+        <input type="search"
+          placeholder="Поиск"
+          class="input-search"
+          (click)="ModalSearchServis.mooveModal()"
+          (input) = "ModalSearchServis.searchWord = inputSerchWord.value"
+          #inputSerchWord
+        >
+        <img src="./assets/icon/Icon_search360.svg" alt="Icon_search" class="img-Icon_search360"
+          (click)="ModalSearchServis.mooveModalSmall()"
+        >
+        <input
+          *ngIf="ModalSearchServis.showSmallInput"
+          type="search"
+          placeholder="Поиск"
+          class="input-search-small"
+          #inputSerchWordSmall
+          (input) = "ModalSearchServis.searchWord = inputSerchWordSmall.value"
+        >
+        <div class="closeSmallModal"
+        *ngIf="ModalSearchServis.showSmallInput"
+        (click)="ModalSearchServis.mooveModalSmall()"
+        >
+          <span class="white-line white-line-first"></span>
+          <span class="white-line white-line-second"></span>
+        </div>
+        <modal-search
+          class="modal-search"
+          *ngIf="ModalSearchServis.showModalSearch"
+        ></modal-search>
       </section>
 
       <!--

@@ -24,7 +24,7 @@ export class MainComponent implements OnInit {
 
     this.width = String(preiew?.length * 100) + '%';
 
-    this.http.mongoGame.forEach((el) => {
+    this.http.mongoGame?.forEach((el) => {
       if (el.category.secondBaner) {
         this.secondBaner = el;
       }

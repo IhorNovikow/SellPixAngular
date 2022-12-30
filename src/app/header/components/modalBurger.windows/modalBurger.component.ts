@@ -3,8 +3,8 @@ import { ModalBurgerServis } from '../../../core/service/modalBurger.service';
 
 @Component({
   selector: 'modal-burger',
-  templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.scss'],
+  templateUrl: './modalBurger.component.html',
+  styleUrls: ['./modalBurger.component.scss'],
 })
 export class ModalBurgerComponent implements OnInit {
   constructor(public ModalBurgerServis: ModalBurgerServis) {}

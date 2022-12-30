@@ -100,7 +100,11 @@
     </div>
   </section>
 -->
-  <section class="main-section-secondBaner" style="background-color: #19143e; padding-bottom: 100px;">
+  <section
+  class="main-section-secondBaner"
+  style="background-color: #19143e; padding-bottom: 100px;"
+  *ngIf="secondBaner"
+  >
     <div class="wrapper">
       <second-baner [baner]="secondBaner"></second-baner>
     </div>

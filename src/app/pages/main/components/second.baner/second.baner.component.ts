@@ -20,7 +20,7 @@ export class SecondBanerComponent implements OnInit {
       rgba(20, 15, 54, 0.85) 0%,
       rgba(20, 15, 54, 0.5525) 39.77%,
       rgba(20, 15, 54, 0) 51.44%
-      ), url(${this.baner.img.big})`;
+      ), url(${this.baner?.img.big})`;
   }
 }
 
