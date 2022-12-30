@@ -73,8 +73,8 @@
       </div>
       <div class="wrapper-discont-circle">-{{someGame.price.discount}}%</div>
       <div class="wrapper-right-price-and-old--price">
-        <p class="right-price">{{someGame.price.priceNow}} ₽</p>
-        <p class="old-price">{{someGame.price.priceOld}} ₽</p>
+        <p class="right-price">{{someGame.price.priceNow }} ₽</p>
+        <p class="old-price">{{(someGame.price.priceNow * (1 + someGame.price.discount / 100)) | number: '1.0-0'}} ₽</p>
       </div>
     </div>
   </div>

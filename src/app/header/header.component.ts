@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalBurgerServis } from '../core/service/modalBurger.service';
+import { ModalSearchServis } from '../core/service/modalSearch.service';
 
 @Component({
   selector: 'app-header',
@@ -6,22 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  itemNav: string[] = [
-    'О нашем магазине',
-    'Гарантии магазина',
-    'Отзывы о магазине',
-    'Вопрос-ответ',
-    'Интересные статьи',
-    'Сотрудничество',
-  ];
-
-  constructor() {}
+  constructor(
+    public ModalBurgerServis: ModalBurgerServis,
+    public ModalSearchServis: ModalSearchServis,
+    ) {}
 
   ngOnInit(): void {}
-
-  routerToPage() {
-    const message: string =
-      'sorry, i havent this page. it page in stage development';
-    alert(message);
-  }
 }

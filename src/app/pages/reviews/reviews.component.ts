@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Review } from '../../data/some.serv.data';
-import { HttpServis } from '../../core/servis/http.servis';
+//import { Review } from '../../data/some.serv.data';
+//import { HttpServis } from '../../core/servis/http.servis';
+//import { DigiSomeReview } from '../../core/interface/digiGame';
 
 @Component({
   selector: 'reviews-page',
@@ -8,14 +9,6 @@ import { HttpServis } from '../../core/servis/http.servis';
   styleUrls: ['./reviews.component.scss'],
 })
 export class ReviewsComponent implements OnInit {
-  allReview: Review[] = [];
-
-
-  constructor(public http: HttpServis) {}
-
-  ngOnInit(): void {
-    this.http.result.forEach((el) => {
-      this.allReview = this.allReview.concat(el.reviews);
-    });
-  }
+  constructor() {}
+  ngOnInit(): void {}
 }

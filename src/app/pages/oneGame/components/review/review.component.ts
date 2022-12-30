@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { DigiReview } from '../../../../core/interface/digiGame';
 
 @Component({
   selector: 'review-game',
@@ -8,7 +9,7 @@ import { Game } from '../../../../data/some.serv.data';
 })
 
 export class ReviewComponent implements OnInit {
-  @Input() someGame: Game;
+  @Input() reviews: DigiReview | undefined;
   constructor() {}
   ngOnInit(): void {
   }

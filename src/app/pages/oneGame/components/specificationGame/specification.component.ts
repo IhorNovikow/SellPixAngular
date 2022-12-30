@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'specification-game',
@@ -7,7 +8,7 @@ import { Game } from '../../../../data/some.serv.data';
   styleUrls: ['./specification.component.scss'],
 })
 export class SpecificationGameComponent implements OnInit {
-  @Input() someGame: Game;
+  @Input() someGame: GameMongo;
   @Input() view: string;
 
   @ViewChild('spec') spec: ElementRef;

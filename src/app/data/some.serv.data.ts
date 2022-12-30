@@ -1,14 +1,8 @@
-export interface Review {
-  date: Date;
-  text: string;
-  userid: string;
-}
-
+/*
 export interface Game {
   img: {
     big: string;
     average: string;
-    small: string;
   };
   title: string;
   category: {
@@ -19,7 +13,6 @@ export interface Game {
     secondBaner: Boolean;
   };
   price: {
-    priceOld: number;
     priceNow: number;
     discount: number;
   };
@@ -36,21 +29,35 @@ export interface Game {
     systemRequirements: string;
     activation: string;
   };
-  _id: string;
+  _id: number;
   photo: string[];
-  reviews: Review[];
 }
+*/
+/*
+  `Видеоигра в жанре квест,
+  разработанная студией BlueTwelve Studio
+  и изданная компанией Annapurna Interactive.
+  Игра вышла 19 июля 2022 года для Windows,
+  PlayStation 4 и PlayStation 5. Ранее игра
+  была известна под названиями HK Project и
+  HK Devblog, которые происходят от давнего
+  блога её разработчиков. В игре рассказывается
+  о бродячем коте, который попадает в мир,
+  населённый роботами, и решает вернуться к
+  своей семье. Игра представляет собой приключенческую
+  игру от третьего лица. В ней есть элементы открытого
+  мира, а также упор, сделанный на атмосферу и искусство[4][5]. Игрок`
+*/
+/*
 export const ansverServ: Game[] = [
   {
-    _id: 'q',
+    _id: 3417148,
     img: {
       big: './assets/photo/main-game/Battlefield_2042/baner/fon.png',
       average:
         './assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
-      small:
-        './assets/photo/main-game/Battlefield_2042/average/battleField.jpg',
     },
-    title: 'Battlefield 2042',
+    title: '',
     category: {
       new: true,
       hit: true,
@@ -59,9 +66,8 @@ export const ansverServ: Game[] = [
       secondBaner: true,
     },
     price: {
-      priceOld: 1,
-      priceNow: 1,
-      discount: 1,
+      priceNow: NaN,
+      discount: 30,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -72,19 +78,7 @@ export const ansverServ: Game[] = [
       region: 'Россия и СНГ',
     },
     discription: {
-      discription: `Видеоигра в жанре квест,
-      разработанная студией BlueTwelve Studio
-      и изданная компанией Annapurna Interactive.
-      Игра вышла 19 июля 2022 года для Windows,
-      PlayStation 4 и PlayStation 5. Ранее игра
-      была известна под названиями HK Project и
-      HK Devblog, которые происходят от давнего
-      блога её разработчиков. В игре рассказывается
-      о бродячем коте, который попадает в мир,
-      населённый роботами, и решает вернуться к
-      своей семье. Игра представляет собой приключенческую
-      игру от третьего лица. В ней есть элементы открытого
-      мира, а также упор, сделанный на атмосферу и искусство[4][5]. Игрок`,
+      discription: '',
       systemRequirements: `ОС: Windows 10 (64-разрядная версия)
       Процессор (AMD): AMD Ryzen 5 1600
       Процессор (Intel): Core i5 6600K
@@ -104,52 +98,16 @@ export const ansverServ: Game[] = [
       './assets/photo/main-game/Battlefield_2042/photo/photo4.jpg',
       './assets/photo/main-game/Battlefield_2042/photo/photo5.jpg',
     ],
-    reviews: [
-      {
-        date: new Date(),
-        text: 'это перввый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это второй отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это третий отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это четвертый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-    ],
+
   },
+
   {
-    _id: 'w',
+    _id: 3415176,
     img: {
       big: './assets/photo/main-game/Stray/baner/F4tauV8VGO6x.jpg',
       average: './assets/photo/main-game/Stray/average/Stray.png',
-      small: './assets/photo/main-game/Stray/average/Stray.png',
     },
-    title: 'Stray',
+    title: '',
     category: {
       new: true,
       hit: true,
@@ -158,9 +116,8 @@ export const ansverServ: Game[] = [
       secondBaner: false,
     },
     price: {
-      priceOld: 1,
-      priceNow: 1,
-      discount: 1,
+      priceNow: NaN,
+      discount: 20,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -171,19 +128,7 @@ export const ansverServ: Game[] = [
       region: 'Россия и СНГ',
     },
     discription: {
-      discription: `Видеоигра в жанре квест,
-      разработанная студией BlueTwelve Studio
-      и изданная компанией Annapurna Interactive.
-      Игра вышла 19 июля 2022 года для Windows,
-      PlayStation 4 и PlayStation 5. Ранее игра
-      была известна под названиями HK Project и
-      HK Devblog, которые происходят от давнего
-      блога её разработчиков. В игре рассказывается
-      о бродячем коте, который попадает в мир,
-      населённый роботами, и решает вернуться к
-      своей семье. Игра представляет собой приключенческую
-      игру от третьего лица. В ней есть элементы открытого
-      мира, а также упор, сделанный на атмосферу и искусство[4][5]. Игрок`,
+      discription: '',
 
       systemRequirements: `ОС: Windows 10 (64-разрядная версия)
       Процессор (AMD): AMD Ryzen 5 1600
@@ -205,54 +150,18 @@ export const ansverServ: Game[] = [
       './assets/photo/main-game/Stray/photo/photo4.jpg',
       './assets/photo/main-game/Stray/photo/photo5.jpg',
     ],
-    reviews: [
-      {
-        date: new Date(),
-        text: 'это перввый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это второй отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это третий отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это четвертый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-    ],
+
   },
+
   {
-    _id: 'e',
+    _id: 3415403,
     img: {
       big: './assets/photo/main-game/Cities_Skylines/baner/cities_skylines.jpg',
       average:
         './assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
-      small:
-        './assets/photo/main-game/Cities_Skylines/average/cities_skylines.png',
+
     },
-    title: 'Cities Skylines',
+    title: '',
     category: {
       new: true,
       hit: true,
@@ -261,9 +170,8 @@ export const ansverServ: Game[] = [
       secondBaner: false,
     },
     price: {
-      priceOld: 10000,
-      priceNow: 11000,
-      discount: 50,
+      priceNow: NaN,
+      discount: 15,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -274,19 +182,7 @@ export const ansverServ: Game[] = [
       region: 'Россия и СНГ',
     },
     discription: {
-      discription: `Видеоигра в жанре квест,
-      разработанная студией BlueTwelve Studio
-      и изданная компанией Annapurna Interactive.
-      Игра вышла 19 июля 2022 года для Windows,
-      PlayStation 4 и PlayStation 5. Ранее игра
-      была известна под названиями HK Project и
-      HK Devblog, которые происходят от давнего
-      блога её разработчиков. В игре рассказывается
-      о бродячем коте, который попадает в мир,
-      населённый роботами, и решает вернуться к
-      своей семье. Игра представляет собой приключенческую
-      игру от третьего лица. В ней есть элементы открытого
-      мира, а также упор, сделанный на атмосферу и искусство[4][5]. Игрок`,
+      discription: '',
 
       systemRequirements: `ОС: Windows 10 (64-разрядная версия)
       Процессор (AMD): AMD Ryzen 5 1600
@@ -308,52 +204,16 @@ export const ansverServ: Game[] = [
       './assets/photo/main-game/Cities_Skylines/photo/photo4.jpg',
       './assets/photo/main-game/Cities_Skylines/photo/photo5.jpg',
     ],
-    reviews: [
-      {
-        date: new Date(),
-        text: 'это перввый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это второй отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это третий отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это четвертый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-    ],
+
   },
+
   {
-    _id: 'r',
+    _id: 3412445,
     img: {
       big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
       average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
-      small: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
     },
-    title: 'Dead Cells',
+    title: '',
     category: {
       new: true,
       hit: true,
@@ -362,9 +222,8 @@ export const ansverServ: Game[] = [
       secondBaner: false,
     },
     price: {
-      priceOld: 500,
-      priceNow: 150,
-      discount: 70,
+      priceNow: NaN,
+      discount: 25,
     },
     mainPoints: {
       genre: 'Экшен, Шутер',
@@ -375,19 +234,7 @@ export const ansverServ: Game[] = [
       region: 'Россия и СНГ',
     },
     discription: {
-      discription: `Видеоигра в жанре квест,
-      разработанная студией BlueTwelve Studio
-      и изданная компанией Annapurna Interactive.
-      Игра вышла 19 июля 2022 года для Windows,
-      PlayStation 4 и PlayStation 5. Ранее игра
-      была известна под названиями HK Project и
-      HK Devblog, которые происходят от давнего
-      блога её разработчиков. В игре рассказывается
-      о бродячем коте, который попадает в мир,
-      населённый роботами, и решает вернуться к
-      своей семье. Игра представляет собой приключенческую
-      игру от третьего лица. В ней есть элементы открытого
-      мира, а также упор, сделанный на атмосферу и искусство[4][5]. Игрок`,
+      discription: '',
 
       systemRequirements: `ОС: Windows 10 (64-разрядная версия)
       Процессор (AMD): AMD Ryzen 5 1600
@@ -409,45 +256,425 @@ export const ansverServ: Game[] = [
       './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
       './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
     ],
-    reviews: [
-      {
-        date: new Date(),
-        text: 'это перввый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это второй отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это третий отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это четвертый отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
-      {
-        date: new Date(),
-        text: 'это мне надоело считать отзыв о данной игре',
-        userid: '1212',
-      },
+
+  },
+
+  {
+    _id: 3415932,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 70,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3415034,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 20,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3424142,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 10,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3415027,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 15,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3435734,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 10,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3435760,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 50,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3435710,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 15,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
+    ],
+
+  },
+
+  {
+    _id: 3414995,
+    img: {
+      big: './assets/photo/main-game/Dead_Cells/baner/H2x1_NSwitch_DeadCells_image1600w.jpg',
+      average: './assets/photo/main-game/Dead_Cells/average/deadCell.png',
+    },
+    title: '',
+    category: {
+      new: true,
+      hit: true,
+      popular: true,
+      preview: true,
+      secondBaner: false,
+    },
+    price: {
+      priceNow: NaN,
+      discount: 10,
+    },
+    mainPoints: {
+      genre: 'Экшен, Шутер',
+      activation: 'Steam',
+      releaseDate: '08 июля 2022',
+      publisher: 'Forever Entertainment',
+      developer: 'MegaPixel Studio S. A.',
+      region: 'Россия и СНГ',
+    },
+    discription: {
+      discription: '',
+
+      systemRequirements: `ОС: Windows 10 (64-разрядная версия)
+      Процессор (AMD): AMD Ryzen 5 1600
+      Процессор (Intel): Core i5 6600K
+      Память: 8ГБ ОЗУ
+      Видеопамять: 4 ГБ
+      Видеокарта (NVIDIA): NVIDIA GeForce® GTX 1050 Ti
+      Видеокарта (AMD): AMD Radeon™ RX 560
+      Версия DirectX: 12
+      Требования к соединению с Интернетом: скорость 512 кбит/с или выше
+      Место на жёстком диске: 100 ГБ`,
+      activation: 'Steam',
+    },
+
+    photo: [
+      './assets/photo/main-game/Dead_Cells/photo/photo1.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo2.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo3.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo4.jpg',
+      './assets/photo/main-game/Dead_Cells/photo/photo5.jpg',
     ],
   },
 ];
+*/
 export interface News {
   preview: boolean;
   _id: string;

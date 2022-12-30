@@ -1,45 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpServis } from '../../core/servis/http.servis';
-import { ansverServ } from '../../data/some.serv.data';
-import {
-  Game,
-  Review,
-  someNews,
-  News,
-} from '../../data/some.serv.data';
+import { GetGameServis } from '../../core/service/getGame.service';
+import { GameMongo } from '../../core/interface/mongoGame';
+import { someNews, News } from '../../data/some.serv.data';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss'],
 })
-
 export class MainComponent implements OnInit {
-  someAnswer: Game[] = ansverServ;
-  somePriviewGame: Game[] = this.someAnswer.filter((el) => {
-    return el.category.preview;
-  });
-  someWidth: string = String(this.somePriviewGame.length * 100) + '%';
-  someAllRevie: Review[] = [];
-
-
-  allReview: Review[] = [];
-  secondBaner: Game;
+  secondBaner: GameMongo;
   viewNews: News[] = someNews.slice(0, 3);
   width: string;
   left: string = '0';
 
-  constructor(
-    public http: HttpServis,
-    private router: Router,
-    ) {}
+  constructor(public http: GetGameServis, private router: Router) {}
 
   ngOnInit(): void {
-    //this.http.getData()
-    this.width = String(this.http.previewGame.length * 100) + '%';
-    this.http.result.forEach((el) => {
-      this.allReview = this.allReview.concat(el.reviews);
+    const preiew = this.http.mongoGame?.filter((el) => {
+      return el.category.preview;
+    });
+
+    this.width = String(preiew?.length * 100) + '%';
+
+    this.http.mongoGame?.forEach((el) => {
       if (el.category.secondBaner) {
         this.secondBaner = el;
       }
@@ -49,10 +34,10 @@ export class MainComponent implements OnInit {
     this.left = String(-Number(id) * 100 + 100) + '%';
   }
 
-  routeOneGame(id: string){
+  routeOneGame(id: string) {
     this.router.navigate([`/game/${id}`]);
   }
-  openNews(id: string){
+  openNews(id: string) {
     this.router.navigate([`/news/${id}`]);
   }
 }

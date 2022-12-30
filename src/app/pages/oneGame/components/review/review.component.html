@@ -1,10 +1,11 @@
-<section class="wrapper-review">
-  <p class="title-review-and-coments">
+<section class="wrapper-review" *ngIf="reviews !== undefined">
+  <p class="title-review-and-coments" >
     <span class="title-review-active">Отзывы</span
-    ><span>{{ someGame.reviews.length }}</span>
+    ><span>{{ reviews.review.length }}</span>
   </p>
 
   <hr class="hr-line-in-box" />
+  <!--
   <section class="wrapper-input-coments">
     <textarea
       name="Text1"
@@ -16,10 +17,11 @@
     <button class="input-btn-submit">Оставить отзыв</button>
   </section>
   <hr class="hr-line-in-box" />
-
+-->
   <div class="wrapper-coments">
-      <div class="wrapper-for-review" *ngFor="let review of someGame.reviews">
+      <div class="wrapper-for-review" *ngFor="let review of reviews.review let i = index">
     <section class="wrapper-blok-coment">
+      <!--
       <div class="wrapper-avatar-coment">
         <img
           src="./assets/icon/onegame/Icon_user.svg"
@@ -27,19 +29,18 @@
           class="avatar-coment"
         />
       </div>
+      -->
       <div class="wrapper-content-coment">
-          <p class="wrapper-nick-athor">Antonio Margaretti</p>
+          <!--<p class="wrapper-nick-athor">Antonio Margaretti</p>-->
         <p class="wrapper-content-coment-text">
-          {{review.text}}
+          {{review.info}}
         </p>
       </div>
       <p class="wrapper-time-coment">
-        <time>{{review.date | date: 'd MMMM y'}}</time>
+        <time>{{review.dateUtc| date: 'd MMMM y'}}</time>
       </p>
     </section>
     <hr class="hr-line-in-box" />
   </div>
   </div>
-
-
 </section>

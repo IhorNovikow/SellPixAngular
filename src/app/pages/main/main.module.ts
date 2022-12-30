@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MainComponent } from './main.component';
 import { MainBaner } from './components/main.baner/baner.compoonent';
 import { SecondBanerComponent } from './components/second.baner/second.baner.component';
+import { GetGameGuard } from '../../core/guards/getGame.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SecondBanerComponent } from './components/second.baner/second.baner.com
     SharedModule,
     CommonModule,
     RouterModule.forChild([
-      { path:'', component: MainComponent },
+      { path:'', component: MainComponent/*, canActivate: [GetGameGuard] */},
       { path: 'game/:id', loadChildren: () => import('../oneGame/oneGame.module').then(mod => mod.OneGameModule) },
       { path: 'news', loadChildren: () => import('../news/news.module').then(mod => mod.NewsModule) },
       { path: 'news/:id', loadChildren: () => import('../oneNews/oneNews.module').then(mod => mod.OneNewsModule) },
