@@ -1,20 +1,52 @@
 <header class="header">
   <div class="wrapper">
     <div class="wrapper-header">
+
       <section class="wrapper-title" routerLink="/" >
         <img src="./assets/icon/Logo.png" alt="Logo" class="header-llogo-title">
       </section>
+
       <section class="wrapper-btn-catalog">
         <button class="btn-catalog" routerLink="/games">
           <span class="name-btn-catalog">Каталог</span>
           <img src="./assets/icon/Icon_apps.svg" alt="Icon_apps" class="img-catalog">
         </button>
       </section>
+
       <section class="wrapper-search">
-        <img src="./assets/icon/Icon_search360.svg" alt="Icon_search" class="img-Icon_search360">
-        <input type="search" placeholder="Поиск" class="input-search">
         <img src="./assets/icon/Icon_search.svg" alt="Icon_search" class="img-Icon_search">
+        <input type="search"
+          placeholder="Поиск"
+          class="input-search"
+          (click)="ModalSearchServis.mooveModal()"
+          (input) = "ModalSearchServis.searchWord = inputSerchWord.value"
+          #inputSerchWord
+        >
+        <img src="./assets/icon/Icon_search360.svg" alt="Icon_search" class="img-Icon_search360"
+          (click)="ModalSearchServis.mooveModalSmall()"
+        >
+        <input
+          *ngIf="ModalSearchServis.showSmallInput"
+          type="search"
+          placeholder="Поиск"
+          class="input-search-small"
+          #inputSerchWordSmall
+          (input) = "ModalSearchServis.searchWord = inputSerchWordSmall.value"
+        >
+        <div class="closeSmallModal"
+        *ngIf="ModalSearchServis.showSmallInput"
+        (click)="ModalSearchServis.mooveModalSmall()"
+        >
+          <span class="white-line white-line-first"></span>
+          <span class="white-line white-line-second"></span>
+        </div>
+        <modal-search
+          class="modal-search"
+          *ngIf="ModalSearchServis.showModalSearch"
+        ></modal-search>
       </section>
+
+      <!--
       <section class="wrapper-save-basket">
         <img src="./assets/icon/Icon_save.svg" alt="Icon_save" class="img-Icon_save">
         <div class="wrapper-basket">
@@ -25,12 +57,15 @@
       <section class="wrapper-user" routerLink="/profile">
         <img src="./assets/icon/Icon_User.png" alt="Icon_User" class="img-Icon_User">
       </section>
-      <section class="wrapper-burger">
-        <span class="burger-line first-burger-line"></span>
-        <span class="burger-line second-burger-line"></span>
-        <span class="burger-line third-burger-line"></span>
-      </section>
+    -->
 
+    <div class="wrapper-burger"(click)="ModalBurgerServis.mooveModal()">
+      <span class="burger-line path1"></span>
+      <span class="burger-line path2"></span>
+      <span class="burger-line path3"></span>
+      <span class="burger-line ninjaSpan"></span>
+    </div>
+      <modal-burger *ngIf="ModalBurgerServis.showModal" class="modalBurger"></modal-burger>
     </div>
 
     <hr class="hr-line">

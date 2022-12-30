@@ -8,7 +8,7 @@
     <div class="main-content-wrapper-for-button">
       <button class="main-content-button">В корзину</button>
       <p class="main-content-price">{{ baner.price.priceNow }} ₽</p>
-      <p class="main-content-old-price">{{ baner.price.priceOld }} ₽</p>
+      <p class="main-content-old-price">{{(baner.price.priceNow * (1 + baner.price.discount / 100)) | number: '1.0-0'}} ₽</p>
     </div>
   </div>
 </div>

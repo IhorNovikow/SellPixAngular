@@ -9,6 +9,7 @@ import { SpecificationGameComponent } from './components/specificationGame/speci
 import { CaruselComponent } from './components/carusel/carusel.component';
 import { ReviewComponent } from './components/review/review.component';
 import { SharedModule } from '../../Shared/shared.module';
+import { GetReviewGuard } from '../../core/guards/getReview.guard';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { SharedModule } from '../../Shared/shared.module';
     CommonModule,
     ReactiveFormsModule,
     RouterModule.forChild([
-      { path: '', component: OneGameComponent },
+      { path: '', component: OneGameComponent/*, canActivate: [GetReviewGuard] */},
     ]),
   ],
 })

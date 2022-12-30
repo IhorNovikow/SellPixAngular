@@ -28,19 +28,10 @@
 }
 
 .title-footer-content{
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
-  color: #FFFFFF;
 }
 .point-footer-list{
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #716BA8;
   cursor: pointer;
 }
@@ -65,11 +56,6 @@
   justify-content: center;
   align-items: center;
 
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #716BA8;
 }
 .footer-hr-line{
@@ -124,10 +110,6 @@
   }
   .title-footer-content {
       font-size: 16px;
-  }
-  .point-footer-list {
-      font-size: 14px;
-      line-height: 21px;
   }
   .list-footer-buyer, .colum-footer-content{
       gap: 10px;

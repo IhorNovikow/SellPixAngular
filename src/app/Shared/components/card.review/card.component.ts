@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Review } from '../../../data/some.serv.data';
+//import { Review } from '../../../data/some.serv.data';
 
 @Component({
   selector: 'review-card',
@@ -8,7 +8,7 @@ import { Review } from '../../../data/some.serv.data';
 })
 
 export class ReviewCardComponent implements OnInit {
-  @Input() oneReview: Review;
+  //@Input() oneReview: Review;
   constructor() { }
 
   ngOnInit(): void {

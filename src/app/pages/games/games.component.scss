@@ -74,9 +74,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   justify-content: center;
-  max-height: 1640px;
+  max-height: 1210px;
+  padding-top: 15px;
+  height: auto;
   min-height: 410px;
   overflow-y: auto;
 }
@@ -117,14 +119,13 @@
       padding: 40px 0 60px 0;
       background: #140f36;
   }
-  .main-wrapper-game-cards {
-      padding-bottom: 20px;
-  }
   .btn-see-more {
       width: 140px;
       height: 42px;
   }
-
+  .main-wrapper-game-cards {
+    max-height: 730px;
+  }
   .title-game-h {
     margin-bottom: 10px;
   }
@@ -138,5 +139,11 @@
       padding: 0 15px 0 15px;
       width: 140px;
       height: 40px;
+  }
+}
+@media screen and (max-width: 417px) {
+  .main-wrapper-game-cards {
+    max-height: 253px;
+    min-height: auto;
   }
 }

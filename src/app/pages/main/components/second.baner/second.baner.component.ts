@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Game } from '../../../../data/some.serv.data';
+//import { Game } from '../../../../data/some.serv.data';
+import { GameMongo } from '../../../../core/interface/mongoGame';
 
 @Component({
   selector: 'second-baner',
@@ -8,7 +9,7 @@ import { Game } from '../../../../data/some.serv.data';
 })
 
 export class SecondBanerComponent implements OnInit {
-  @Input() baner: Game;
+  @Input() baner: GameMongo;
   backgroundImage: string;
   constructor() { }
 
@@ -19,7 +20,7 @@ export class SecondBanerComponent implements OnInit {
       rgba(20, 15, 54, 0.85) 0%,
       rgba(20, 15, 54, 0.5525) 39.77%,
       rgba(20, 15, 54, 0) 51.44%
-      ), url(${this.baner.img.big})`;
+      ), url(${this.baner?.img.big})`;
   }
 }
 

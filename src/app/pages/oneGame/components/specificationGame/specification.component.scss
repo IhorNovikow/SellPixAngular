@@ -17,11 +17,6 @@
   gap: 30px;
 }
 .title-descrioption{
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #716BA8;
   height: 34px;
   cursor: pointer;
@@ -32,12 +27,6 @@
 }
 .content-description-game{
   margin: 30px;
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #FFFFFF;
   overflow-y: auto;
 }
 .wrapper-description-game1220{
@@ -48,7 +37,8 @@
       width: 100%;
       max-width: 857px;
       height: auto;
-      min-height: 293px;
+      //min-height: 293px;
+      min-height: 317px;
       max-height: 317px;
   }
   .wrapper-description-game1220{
@@ -61,8 +51,8 @@
 @media screen and (max-width: 745px) {
   .description-game {
       width: 100%;
-      height: auto;
-      max-height: 364px;
+      //height: auto;
+      //max-height: 364px;
   }
   .title-line-discription, .discription-title-line-discription {
       font-size: 14px;
@@ -80,7 +70,7 @@
       margin: 20px;
       font-size: 14px;
       line-height: 21px;
-      max-height: 270px;
+      max-height: 226px;
   }
 
 }
@@ -96,21 +86,7 @@
   .wrapper-title-description-section{
       overflow-x: scroll;
   }
-
-  .title-descrioption1{
-      width: 78px;
-  }
-  .title-descrioption2{
-      width: 178px;
-  }
-  .title-descrioption3{
-      width: 78px;
-  }
   .title-descrioption{
-      font-family: 'Gilroy';
-      font-style: normal;
-      font-weight: 400;
       height: 30px;
-      cursor: pointer;
   }
 }

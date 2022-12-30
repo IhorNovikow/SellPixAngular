@@ -17,6 +17,6 @@ export class CardNewsComponent implements OnInit {
       rgba(20, 15, 54, 0.85) 0%,
       rgba(20, 15, 54, 0.5525) 23.78%,
       rgba(20, 15, 54, 0) 45.15%
-      ), url(${this.oneNews.img.small})`;
+      ), url(${this.oneNews.img.average})`;
   }
 }
